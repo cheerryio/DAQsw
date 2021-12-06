@@ -1,0 +1,498 @@
+timestamp=[2021-10-13 16:03:20], mode=WORKBENCH_START, duration=0:00:02.535, duration_ms=2535, data={}
+timestamp=[2021-10-13 16:03:20], mode=WORKBENCH_UI_INIT, duration=0:00:00.205, duration_ms=205, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-10-13 16:03:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:01.458, duration_ms=1458, data={}
+timestamp=[2021-10-13 16:04:10], mode=APP_CREATION, duration=0:00:06.309, duration_ms=6309, data={name=APDAQ_subsys, project_type=sdk, os=freertos10_xilinx, processor=ps7_cortexa9, runtime=cpp, platform=APDAQ_subsys_wrapper, application_type=application}
+timestamp=[2021-10-13 16:26:49], mode=PLATFORM_GENERATION, duration=0:00:06.871, duration_ms=6871, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-13 16:26:50], mode=BUILD, duration=0:00:00.674, duration_ms=674, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:27:52], mode=BUILD, duration=0:00:00.522, duration_ms=522, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:29:01], mode=BUILD, duration=0:00:00.518, duration_ms=518, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:29:54], mode=BUILD, duration=0:00:00.216, duration_ms=216, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:30:33], mode=BUILD, duration=0:00:00.569, duration_ms=569, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:30:56], mode=BUILD, duration=0:00:00.324, duration_ms=324, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:31:09], mode=BUILD, duration=0:00:00.167, duration_ms=167, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:31:56], mode=PLATFORM_GENERATION, duration=0:00:04.988, duration_ms=4988, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-13 16:31:58], mode=BUILD, duration=0:00:01.026, duration_ms=1026, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:32:52], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:33:54], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:49:09], mode=BUILD, duration=0:00:00.868, duration_ms=868, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:51:58], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:52:19], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:52:55], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 16:58:11], mode=BUILD, duration=0:00:00.868, duration_ms=868, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 19:33:12], mode=MISC, duration=0:00:00.924, duration_ms=924, data={name=APDAQ_subsys_system, type=bif_creation}
+timestamp=[2021-10-13 19:37:33], mode=PLATFORM_GENERATION, duration=0:00:05.544, duration_ms=5544, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-13 19:38:19], mode=BUILD, duration=0:00:01.022, duration_ms=1022, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 19:38:52], mode=PLATFORM_GENERATION, duration=0:00:05.041, duration_ms=5041, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-13 19:38:53], mode=BUILD, duration=0:00:01.021, duration_ms=1021, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 19:43:52], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-13 19:55:03], mode=PLATFORM_GENERATION, duration=0:00:04.186, duration_ms=4186, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-13 19:55:05], mode=BUILD, duration=0:00:01.020, duration_ms=1020, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-16 20:52:16], mode=WORKBENCH_START, duration=0:00:04.490, duration_ms=4490, data={}
+timestamp=[2021-10-16 20:52:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.014, duration_ms=14, data={}
+timestamp=[2021-10-16 20:52:16], mode=WORKBENCH_UI_INIT, duration=0:00:00.408, duration_ms=408, data={editors_count=5, platform_editors_count=2, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-16 21:00:29], mode=PLATFORM_GENERATION, duration=0:00:05.662, duration_ms=5662, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-16 21:00:31], mode=BUILD, duration=0:00:01.070, duration_ms=1070, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-16 21:00:46], mode=PLATFORM_GENERATION, duration=0:00:05.035, duration_ms=5035, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-16 21:00:53], mode=BUILD, duration=0:00:01.016, duration_ms=1016, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-16 21:04:16], mode=APP_CREATION, duration=0:00:02.093, duration_ms=2093, data={name=xiicps_intr_master_example_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a9, runtime=C/C++, platform=APDAQ_subsys_wrapper, application_type=application}
+timestamp=[2021-10-16 21:05:36], mode=BUILD, duration=0:00:00.216, duration_ms=216, data={name=xiicps_intr_master_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 17:40:42], mode=WORKBENCH_START, duration=0:00:04.589, duration_ms=4589, data={}
+timestamp=[2021-10-18 17:40:42], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.011, duration_ms=11, data={}
+timestamp=[2021-10-18 17:40:42], mode=WORKBENCH_UI_INIT, duration=0:00:00.439, duration_ms=439, data={editors_count=12, platform_editors_count=5, projects_count=6, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system}
+timestamp=[2021-10-18 19:44:18], mode=PLATFORM_GENERATION, duration=0:00:04.257, duration_ms=4257, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-18 19:44:19], mode=BUILD, duration=0:00:00.275, duration_ms=275, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 19:44:44], mode=BUILD, duration=0:00:00.169, duration_ms=169, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 19:46:19], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 19:47:07], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 19:47:43], mode=BUILD, duration=0:00:00.167, duration_ms=167, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 19:48:45], mode=BUILD, duration=0:00:00.167, duration_ms=167, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 19:49:02], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 19:49:30], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 19:50:23], mode=BUILD, duration=0:00:00.166, duration_ms=166, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 19:51:01], mode=BUILD, duration=0:00:01.018, duration_ms=1018, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:01:18], mode=BUILD, duration=0:00:00.265, duration_ms=265, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:01:32], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:02:10], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:02:52], mode=PLATFORM_GENERATION, duration=0:00:05.712, duration_ms=5712, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-18 20:02:58], mode=BUILD, duration=0:00:01.070, duration_ms=1070, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:03:16], mode=BUILD, duration=0:00:00.366, duration_ms=366, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:05:48], mode=BUILD, duration=0:00:00.369, duration_ms=369, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:09:57], mode=BUILD, duration=0:00:00.368, duration_ms=368, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:11:36], mode=BUILD, duration=0:00:00.369, duration_ms=369, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:12:06], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:12:25], mode=BUILD, duration=0:00:00.217, duration_ms=217, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:13:32], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=xiicps_intr_master_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:16:57], mode=APP_CREATION, duration=0:00:02.209, duration_ms=2209, data={name=xiicps_polled_multi_master_example_1, project_type=sdk, os=freertos10_xilinx, processor=cortex-a9, runtime=C/C++, platform=APDAQ_subsys_wrapper, application_type=application}
+timestamp=[2021-10-18 20:17:43], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=xiicps_polled_multi_master_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:20:48], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=xiicps_polled_multi_master_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:20:53], mode=BUILD, duration=0:00:00.971, duration_ms=971, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:21:28], mode=BUILD, duration=0:00:00.124, duration_ms=124, data={name=xiicps_polled_multi_master_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:21:32], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:28:22], mode=BUILD, duration=0:00:00.368, duration_ms=368, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:53:18], mode=BUILD, duration=0:00:00.118, duration_ms=118, data={name=xiicps_polled_multi_master_example_1, configuration=Debug, clean_build=false}
+timestamp=[2021-10-18 20:53:23], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 19:38:50], mode=WORKBENCH_START, duration=0:00:04.652, duration_ms=4652, data={}
+timestamp=[2021-10-19 19:38:50], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.017, duration_ms=17, data={}
+timestamp=[2021-10-19 19:38:50], mode=WORKBENCH_UI_INIT, duration=0:00:00.419, duration_ms=419, data={editors_count=12, platform_editors_count=5, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-19 20:27:46], mode=BUILD, duration=0:00:00.394, duration_ms=394, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 20:36:10], mode=BUILD, duration=0:00:00.216, duration_ms=216, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 20:36:26], mode=BUILD, duration=0:00:00.216, duration_ms=216, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 20:36:37], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 20:37:45], mode=PLATFORM_GENERATION, duration=0:00:05.650, duration_ms=5650, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-19 20:37:47], mode=BUILD, duration=0:00:01.117, duration_ms=1117, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 20:41:13], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:01:24], mode=WORKBENCH_START, duration=0:00:04.729, duration_ms=4729, data={}
+timestamp=[2021-10-19 21:01:24], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.022, duration_ms=22, data={}
+timestamp=[2021-10-19 21:01:25], mode=WORKBENCH_UI_INIT, duration=0:00:00.660, duration_ms=660, data={editors_count=2, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-19 21:01:28], mode=BUILD, duration=0:00:00.192, duration_ms=192, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:02:00], mode=BUILD, duration=0:00:00.269, duration_ms=269, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:02:14], mode=BUILD, duration=0:00:00.720, duration_ms=720, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:03:05], mode=BUILD, duration=0:00:00.219, duration_ms=219, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:03:38], mode=PLATFORM_GENERATION, duration=0:00:05.947, duration_ms=5947, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-19 21:03:40], mode=BUILD, duration=0:00:01.121, duration_ms=1121, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:05:32], mode=PLATFORM_GENERATION, duration=0:00:04.188, duration_ms=4188, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-19 21:05:34], mode=BUILD, duration=0:00:01.320, duration_ms=1320, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:06:35], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:08:03], mode=WORKBENCH_START, duration=0:00:04.922, duration_ms=4922, data={}
+timestamp=[2021-10-19 21:08:03], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.012, duration_ms=12, data={}
+timestamp=[2021-10-19 21:08:04], mode=WORKBENCH_UI_INIT, duration=0:00:00.567, duration_ms=567, data={editors_count=1, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-19 21:13:15], mode=PLATFORM_GENERATION, duration=0:00:07.521, duration_ms=7521, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-19 21:13:17], mode=BUILD, duration=0:00:01.324, duration_ms=1324, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:17:25], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:20:48], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:22:30], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:22:58], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:25:38], mode=PLATFORM_GENERATION, duration=0:00:04.189, duration_ms=4189, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-19 21:25:40], mode=BUILD, duration=0:00:01.268, duration_ms=1268, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:30:35], mode=BUILD, duration=0:00:00.215, duration_ms=215, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:31:10], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:35:11], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:35:24], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:39:17], mode=WORKBENCH_START, duration=0:00:05.142, duration_ms=5142, data={}
+timestamp=[2021-10-19 21:39:17], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.015, duration_ms=15, data={}
+timestamp=[2021-10-19 21:39:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.523, duration_ms=523, data={editors_count=1, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-19 21:39:27], mode=PLATFORM_GENERATION, duration=0:00:06.273, duration_ms=6273, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-19 21:39:29], mode=BUILD, duration=0:00:01.324, duration_ms=1324, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 21:40:32], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:13:52], mode=BUILD, duration=0:00:00.517, duration_ms=517, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:14:03], mode=BUILD, duration=0:00:00.215, duration_ms=215, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:14:54], mode=BUILD, duration=0:00:00.215, duration_ms=215, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:15:13], mode=BUILD, duration=0:00:00.365, duration_ms=365, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:15:54], mode=BUILD, duration=0:00:00.716, duration_ms=716, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:20:12], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:30:16], mode=BUILD, duration=0:00:00.214, duration_ms=214, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:30:42], mode=BUILD, duration=0:00:00.266, duration_ms=266, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:31:26], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:34:27], mode=BUILD, duration=0:00:01.167, duration_ms=1167, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:36:32], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:40:07], mode=WORKBENCH_START, duration=0:00:05.028, duration_ms=5028, data={}
+timestamp=[2021-10-19 22:40:08], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.012, duration_ms=12, data={}
+timestamp=[2021-10-19 22:40:08], mode=WORKBENCH_UI_INIT, duration=0:00:00.604, duration_ms=604, data={editors_count=2, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-19 22:41:23], mode=PLATFORM_GENERATION, duration=0:00:06.121, duration_ms=6121, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-19 22:41:24], mode=BUILD, duration=0:00:01.074, duration_ms=1074, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:41:52], mode=PLATFORM_GENERATION, duration=0:00:04.346, duration_ms=4346, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-19 22:41:52], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=APDAQ_subsys, configuration=Debug, clean_build=true}
+timestamp=[2021-10-19 22:42:04], mode=PLATFORM_GENERATION, duration=0:00:09.055, duration_ms=9055, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-19 22:42:05], mode=BUILD, duration=0:00:01.017, duration_ms=1017, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:42:27], mode=BUILD, duration=0:00:00.565, duration_ms=565, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:46:40], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:48:56], mode=BUILD, duration=0:00:00.114, duration_ms=114, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:49:20], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:51:21], mode=BUILD, duration=0:00:00.565, duration_ms=565, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:52:51], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:53:18], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:56:09], mode=BUILD, duration=0:00:01.168, duration_ms=1168, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 22:56:28], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 23:00:37], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 23:09:26], mode=BUILD, duration=0:00:00.267, duration_ms=267, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-19 23:09:38], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 11:33:17], mode=WORKBENCH_START, duration=0:00:04.779, duration_ms=4779, data={}
+timestamp=[2021-10-20 11:33:17], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.015, duration_ms=15, data={}
+timestamp=[2021-10-20 11:33:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.520, duration_ms=520, data={editors_count=7, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-20 11:34:15], mode=BUILD, duration=0:00:00.390, duration_ms=390, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 11:34:42], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 11:35:28], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 11:50:57], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 12:50:57], mode=PLATFORM_GENERATION, duration=0:00:06.004, duration_ms=6004, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-20 12:50:59], mode=BUILD, duration=0:00:01.570, duration_ms=1570, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 12:51:32], mode=WORKBENCH_START, duration=0:00:04.805, duration_ms=4805, data={}
+timestamp=[2021-10-20 12:51:32], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.011, duration_ms=11, data={}
+timestamp=[2021-10-20 12:51:32], mode=WORKBENCH_UI_INIT, duration=0:00:00.518, duration_ms=518, data={editors_count=7, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-20 12:51:36], mode=BUILD, duration=0:00:00.142, duration_ms=142, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 12:53:30], mode=PLATFORM_GENERATION, duration=0:00:05.798, duration_ms=5798, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-20 12:53:32], mode=BUILD, duration=0:00:01.571, duration_ms=1571, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 14:55:55], mode=WORKBENCH_START, duration=0:00:04.583, duration_ms=4583, data={}
+timestamp=[2021-10-20 14:55:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.011, duration_ms=11, data={}
+timestamp=[2021-10-20 14:55:56], mode=WORKBENCH_UI_INIT, duration=0:00:00.553, duration_ms=553, data={editors_count=4, platform_editors_count=1, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-20 14:58:14], mode=WORKBENCH_START, duration=0:00:04.651, duration_ms=4651, data={}
+timestamp=[2021-10-20 14:58:15], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.011, duration_ms=11, data={}
+timestamp=[2021-10-20 14:58:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.537, duration_ms=537, data={editors_count=4, platform_editors_count=1, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-20 15:11:23], mode=BUILD, duration=0:00:00.387, duration_ms=387, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:12:32], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:13:29], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:14:15], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:14:54], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:15:17], mode=BUILD, duration=0:00:00.114, duration_ms=114, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:23:52], mode=BUILD, duration=0:00:00.715, duration_ms=715, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:24:26], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:25:14], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:26:33], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:27:06], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:31:55], mode=BUILD, duration=0:00:00.465, duration_ms=465, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:35:30], mode=PLATFORM_GENERATION, duration=0:00:05.742, duration_ms=5742, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-20 15:35:32], mode=BUILD, duration=0:00:01.518, duration_ms=1518, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:37:29], mode=WORKBENCH_START, duration=0:00:04.247, duration_ms=4247, data={}
+timestamp=[2021-10-20 15:37:29], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2021-10-20 15:37:29], mode=WORKBENCH_UI_INIT, duration=0:00:00.561, duration_ms=561, data={editors_count=5, platform_editors_count=1, projects_count=8, platform_projects_count=1, active_platform_editor=true, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-20 15:37:49], mode=PLATFORM_GENERATION, duration=0:00:04.212, duration_ms=4212, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-20 15:37:51], mode=BUILD, duration=0:00:01.477, duration_ms=1477, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 15:47:02], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 16:02:28], mode=BUILD, duration=0:00:00.368, duration_ms=368, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 16:02:46], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 16:12:05], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:03:34], mode=BUILD, duration=0:00:00.120, duration_ms=120, data={name=APDAQ_subsys, configuration=Debug, clean_build=true}
+timestamp=[2021-10-20 17:03:34], mode=BUILD, duration=0:00:00.172, duration_ms=172, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:03:58], mode=BUILD, duration=0:00:00.622, duration_ms=622, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:04:13], mode=BUILD, duration=0:00:00.472, duration_ms=472, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:07:44], mode=BUILD, duration=0:00:00.420, duration_ms=420, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:07:59], mode=BUILD, duration=0:00:00.320, duration_ms=320, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:08:22], mode=BUILD, duration=0:00:00.469, duration_ms=469, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:46:58], mode=BUILD, duration=0:00:00.721, duration_ms=721, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:47:48], mode=BUILD, duration=0:00:00.922, duration_ms=922, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:48:28], mode=WORKBENCH_START, duration=0:00:04.515, duration_ms=4515, data={}
+timestamp=[2021-10-20 17:48:28], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.017, duration_ms=17, data={}
+timestamp=[2021-10-20 17:48:29], mode=WORKBENCH_UI_INIT, duration=0:00:00.578, duration_ms=578, data={editors_count=9, platform_editors_count=1, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-20 17:48:31], mode=BUILD, duration=0:00:00.147, duration_ms=147, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:51:08], mode=PLATFORM_GENERATION, duration=0:00:05.747, duration_ms=5747, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-20 17:51:10], mode=BUILD, duration=0:00:01.574, duration_ms=1574, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:54:13], mode=BUILD, duration=0:00:00.472, duration_ms=472, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:55:15], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:55:33], mode=BUILD, duration=0:00:00.171, duration_ms=171, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 17:59:21], mode=BUILD, duration=0:00:00.370, duration_ms=370, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:00:11], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:01:49], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:03:00], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:03:29], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:31:05], mode=BUILD, duration=0:00:00.471, duration_ms=471, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:34:27], mode=BUILD, duration=0:00:00.229, duration_ms=229, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:34:42], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:40:50], mode=BUILD, duration=0:00:00.471, duration_ms=471, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:41:27], mode=BUILD, duration=0:00:00.473, duration_ms=473, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:42:03], mode=BUILD, duration=0:00:00.270, duration_ms=270, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:42:49], mode=BUILD, duration=0:00:00.371, duration_ms=371, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:43:48], mode=BUILD, duration=0:00:00.222, duration_ms=222, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:45:05], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:46:09], mode=BUILD, duration=0:00:00.122, duration_ms=122, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:46:42], mode=BUILD, duration=0:00:00.320, duration_ms=320, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:47:51], mode=BUILD, duration=0:00:00.123, duration_ms=123, data={name=APDAQ_subsys, configuration=Debug, clean_build=true}
+timestamp=[2021-10-20 18:47:52], mode=BUILD, duration=0:00:01.173, duration_ms=1173, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:48:25], mode=BUILD, duration=0:00:00.621, duration_ms=621, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:49:51], mode=BUILD, duration=0:00:00.371, duration_ms=371, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:50:32], mode=PLATFORM_GENERATION, duration=0:00:04.400, duration_ms=4400, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-20 18:50:32], mode=BUILD, duration=0:00:00.123, duration_ms=123, data={name=APDAQ_subsys, configuration=Debug, clean_build=true}
+timestamp=[2021-10-20 18:50:42], mode=PLATFORM_GENERATION, duration=0:00:06.955, duration_ms=6955, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-20 18:50:44], mode=BUILD, duration=0:00:01.174, duration_ms=1174, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:51:37], mode=BUILD, duration=0:00:00.321, duration_ms=321, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 18:53:39], mode=BUILD, duration=0:00:00.373, duration_ms=373, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:05:04], mode=BUILD, duration=0:00:00.525, duration_ms=525, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:05:14], mode=BUILD, duration=0:00:00.624, duration_ms=624, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:06:00], mode=BUILD, duration=0:00:00.277, duration_ms=277, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:09:12], mode=BUILD, duration=0:00:00.272, duration_ms=272, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:23:00], mode=BUILD, duration=0:00:00.422, duration_ms=422, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:25:03], mode=BUILD, duration=0:00:00.372, duration_ms=372, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:27:54], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:28:08], mode=BUILD, duration=0:00:00.624, duration_ms=624, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:29:22], mode=BUILD, duration=0:00:00.272, duration_ms=272, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:32:21], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:32:37], mode=BUILD, duration=0:00:00.122, duration_ms=122, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:35:17], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:35:30], mode=BUILD, duration=0:00:00.122, duration_ms=122, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:36:04], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:36:15], mode=BUILD, duration=0:00:00.374, duration_ms=374, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:36:59], mode=BUILD, duration=0:00:00.123, duration_ms=123, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:46:51], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:49:43], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:56:37], mode=BUILD, duration=0:00:00.323, duration_ms=323, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:56:45], mode=BUILD, duration=0:00:00.373, duration_ms=373, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-20 19:58:52], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:23:17], mode=WORKBENCH_START, duration=0:00:04.718, duration_ms=4718, data={}
+timestamp=[2021-10-22 14:23:18], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.014, duration_ms=14, data={}
+timestamp=[2021-10-22 14:23:18], mode=WORKBENCH_UI_INIT, duration=0:00:00.625, duration_ms=625, data={editors_count=5, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-22 14:23:27], mode=PLATFORM_GENERATION, duration=0:00:05.914, duration_ms=5914, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-22 14:23:29], mode=BUILD, duration=0:00:01.121, duration_ms=1121, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:34:36], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:36:24], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:39:00], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:45:12], mode=BUILD, duration=0:00:00.464, duration_ms=464, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:46:11], mode=BUILD, duration=0:00:00.617, duration_ms=617, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:47:21], mode=BUILD, duration=0:00:00.263, duration_ms=263, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:48:43], mode=BUILD, duration=0:00:00.265, duration_ms=265, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:49:24], mode=BUILD, duration=0:00:00.265, duration_ms=265, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:50:45], mode=BUILD, duration=0:00:00.313, duration_ms=313, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:53:20], mode=BUILD, duration=0:00:00.465, duration_ms=465, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:53:34], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:55:09], mode=BUILD, duration=0:00:00.465, duration_ms=465, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 14:56:31], mode=BUILD, duration=0:00:00.465, duration_ms=465, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 15:00:25], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 15:02:31], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 15:04:35], mode=WORKBENCH_START, duration=0:00:04.635, duration_ms=4635, data={}
+timestamp=[2021-10-22 15:04:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.012, duration_ms=12, data={}
+timestamp=[2021-10-22 15:04:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.664, duration_ms=664, data={editors_count=6, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-22 15:04:38], mode=BUILD, duration=0:00:00.338, duration_ms=338, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 15:07:05], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 17:33:38], mode=WORKBENCH_START, duration=0:00:05.085, duration_ms=5085, data={}
+timestamp=[2021-10-22 17:33:38], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.014, duration_ms=14, data={}
+timestamp=[2021-10-22 17:33:39], mode=WORKBENCH_UI_INIT, duration=0:00:00.595, duration_ms=595, data={editors_count=6, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-22 17:33:44], mode=BUILD, duration=0:00:00.494, duration_ms=494, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 17:35:22], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 17:35:34], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 17:35:37], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 17:35:45], mode=BUILD, duration=0:00:00.115, duration_ms=115, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 17:37:14], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 17:42:34], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:27:12], mode=WORKBENCH_START, duration=0:00:04.929, duration_ms=4929, data={}
+timestamp=[2021-10-22 18:27:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2021-10-22 18:27:12], mode=WORKBENCH_UI_INIT, duration=0:00:00.502, duration_ms=502, data={editors_count=6, platform_editors_count=0, projects_count=8, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles,xiicps_intr_master_example_1,xiicps_intr_master_example_1_system,xiicps_polled_multi_master_example_1,xiicps_polled_multi_master_example_1_system}
+timestamp=[2021-10-22 18:27:17], mode=BUILD, duration=0:00:00.140, duration_ms=140, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:32:37], mode=BUILD, duration=0:00:00.616, duration_ms=616, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:33:26], mode=BUILD, duration=0:00:00.265, duration_ms=265, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:34:13], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:37:57], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:38:04], mode=BUILD, duration=0:00:00.112, duration_ms=112, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:41:21], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:41:31], mode=BUILD, duration=0:00:00.266, duration_ms=266, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:47:06], mode=BUILD, duration=0:00:00.416, duration_ms=416, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:50:41], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:52:07], mode=PLATFORM_GENERATION, duration=0:00:04.241, duration_ms=4241, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-22 18:52:08], mode=BUILD, duration=0:00:01.117, duration_ms=1117, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:54:10], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 18:57:48], mode=WORKBENCH_START, duration=0:00:04.319, duration_ms=4319, data={}
+timestamp=[2021-10-22 18:57:48], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.011, duration_ms=11, data={}
+timestamp=[2021-10-22 18:57:49], mode=WORKBENCH_UI_INIT, duration=0:00:00.494, duration_ms=494, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-22 18:59:14], mode=WORKBENCH_START, duration=0:00:04.767, duration_ms=4767, data={}
+timestamp=[2021-10-22 18:59:14], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.014, duration_ms=14, data={}
+timestamp=[2021-10-22 18:59:15], mode=WORKBENCH_UI_INIT, duration=0:00:00.514, duration_ms=514, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-22 18:59:24], mode=PLATFORM_GENERATION, duration=0:00:06.935, duration_ms=6935, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-22 18:59:26], mode=BUILD, duration=0:00:01.172, duration_ms=1172, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 19:01:53], mode=BUILD, duration=0:00:00.614, duration_ms=614, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 19:02:37], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 20:17:22], mode=WORKBENCH_START, duration=0:00:04.500, duration_ms=4500, data={}
+timestamp=[2021-10-22 20:17:22], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.011, duration_ms=11, data={}
+timestamp=[2021-10-22 20:17:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.581, duration_ms=581, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-22 21:12:32], mode=WORKBENCH_START, duration=0:00:04.621, duration_ms=4621, data={}
+timestamp=[2021-10-22 21:12:32], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.022, duration_ms=22, data={}
+timestamp=[2021-10-22 21:12:33], mode=WORKBENCH_UI_INIT, duration=0:00:00.499, duration_ms=499, data={editors_count=7, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-22 21:12:40], mode=BUILD, duration=0:00:00.390, duration_ms=390, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 21:13:25], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 21:21:21], mode=BUILD, duration=0:00:00.264, duration_ms=264, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 21:24:07], mode=BUILD, duration=0:00:00.113, duration_ms=113, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 21:24:45], mode=BUILD, duration=0:00:00.112, duration_ms=112, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 22:43:11], mode=WORKBENCH_START, duration=0:00:04.551, duration_ms=4551, data={}
+timestamp=[2021-10-22 22:43:11], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.014, duration_ms=14, data={}
+timestamp=[2021-10-22 22:43:11], mode=WORKBENCH_UI_INIT, duration=0:00:00.513, duration_ms=513, data={editors_count=8, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-22 22:43:32], mode=PLATFORM_GENERATION, duration=0:00:04.256, duration_ms=4256, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-22 22:43:32], mode=BUILD, duration=0:00:00.123, duration_ms=123, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 22:44:15], mode=PLATFORM_GENERATION, duration=0:00:05.689, duration_ms=5689, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-22 22:44:16], mode=BUILD, duration=0:00:00.566, duration_ms=566, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 22:45:15], mode=PLATFORM_GENERATION, duration=0:00:07.799, duration_ms=7799, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-22 22:45:17], mode=BUILD, duration=0:00:01.170, duration_ms=1170, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-22 22:46:22], mode=BUILD, duration=0:00:00.270, duration_ms=270, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-25 15:35:05], mode=WORKBENCH_START, duration=0:00:05.097, duration_ms=5097, data={}
+timestamp=[2021-10-25 15:35:06], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.024, duration_ms=24, data={}
+timestamp=[2021-10-25 15:35:06], mode=WORKBENCH_UI_INIT, duration=0:00:00.598, duration_ms=598, data={editors_count=1, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-25 15:37:51], mode=WORKBENCH_START, duration=0:00:05.187, duration_ms=5187, data={}
+timestamp=[2021-10-25 15:37:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.028, duration_ms=28, data={}
+timestamp=[2021-10-25 15:37:52], mode=WORKBENCH_UI_INIT, duration=0:00:00.661, duration_ms=661, data={editors_count=1, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-28 22:26:35], mode=WORKBENCH_START, duration=0:00:04.364, duration_ms=4364, data={}
+timestamp=[2021-10-28 22:26:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.019, duration_ms=19, data={}
+timestamp=[2021-10-28 22:26:35], mode=WORKBENCH_UI_INIT, duration=0:00:00.502, duration_ms=502, data={editors_count=1, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-28 22:27:35], mode=PLATFORM_GENERATION, duration=0:00:07.878, duration_ms=7878, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-28 22:27:36], mode=BUILD, duration=0:00:01.122, duration_ms=1122, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-28 22:28:04], mode=PLATFORM_GENERATION, duration=0:00:05.545, duration_ms=5545, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-28 22:28:06], mode=BUILD, duration=0:00:01.269, duration_ms=1269, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 17:34:16], mode=WORKBENCH_START, duration=0:00:04.303, duration_ms=4303, data={}
+timestamp=[2021-10-29 17:34:16], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.015, duration_ms=15, data={}
+timestamp=[2021-10-29 17:34:17], mode=WORKBENCH_UI_INIT, duration=0:00:00.514, duration_ms=514, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-29 17:37:36], mode=PLATFORM_GENERATION, duration=0:00:04.260, duration_ms=4260, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-29 17:37:38], mode=BUILD, duration=0:00:01.224, duration_ms=1224, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 17:39:41], mode=BUILD, duration=0:00:00.568, duration_ms=568, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 17:40:58], mode=BUILD, duration=0:00:00.114, duration_ms=114, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 17:41:28], mode=PLATFORM_GENERATION, duration=0:00:05.593, duration_ms=5593, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-29 17:41:30], mode=BUILD, duration=0:00:01.272, duration_ms=1272, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 17:48:06], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 17:48:49], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 17:49:23], mode=BUILD, duration=0:00:00.367, duration_ms=367, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 17:49:41], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 17:54:57], mode=BUILD, duration=0:00:00.118, duration_ms=118, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 18:06:17], mode=PLATFORM_GENERATION, duration=0:00:04.235, duration_ms=4235, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-29 18:06:19], mode=BUILD, duration=0:00:01.121, duration_ms=1121, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 18:21:59], mode=PLATFORM_GENERATION, duration=0:00:04.235, duration_ms=4235, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-29 18:22:01], mode=BUILD, duration=0:00:01.171, duration_ms=1171, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 22:29:48], mode=WORKBENCH_START, duration=0:00:04.887, duration_ms=4887, data={}
+timestamp=[2021-10-29 22:29:48], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.014, duration_ms=14, data={}
+timestamp=[2021-10-29 22:29:48], mode=WORKBENCH_UI_INIT, duration=0:00:00.499, duration_ms=499, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-10-29 22:30:03], mode=BUILD, duration=0:00:00.688, duration_ms=688, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 22:34:27], mode=BUILD, duration=0:00:00.564, duration_ms=564, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-29 22:35:16], mode=PLATFORM_GENERATION, duration=0:00:05.540, duration_ms=5540, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-10-29 22:35:18], mode=BUILD, duration=0:00:01.165, duration_ms=1165, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-10-30 21:40:36], mode=WORKBENCH_START, duration=0:00:04.731, duration_ms=4731, data={}
+timestamp=[2021-10-30 21:40:36], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2021-10-30 21:40:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.535, duration_ms=535, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-08 15:20:27], mode=WORKBENCH_START, duration=0:00:04.535, duration_ms=4535, data={}
+timestamp=[2021-11-08 15:20:27], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.019, duration_ms=19, data={}
+timestamp=[2021-11-08 15:20:27], mode=WORKBENCH_UI_INIT, duration=0:00:00.489, duration_ms=489, data={editors_count=7, platform_editors_count=3, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-08 16:27:37], mode=WORKBENCH_START, duration=0:00:04.360, duration_ms=4360, data={}
+timestamp=[2021-11-08 16:27:37], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2021-11-08 16:27:37], mode=WORKBENCH_UI_INIT, duration=0:00:00.501, duration_ms=501, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-09 16:01:05], mode=WORKBENCH_START, duration=0:00:04.520, duration_ms=4520, data={}
+timestamp=[2021-11-09 16:01:05], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2021-11-09 16:01:06], mode=WORKBENCH_UI_INIT, duration=0:00:00.514, duration_ms=514, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-10 16:14:23], mode=WORKBENCH_START, duration=0:00:04.464, duration_ms=4464, data={}
+timestamp=[2021-11-10 16:14:23], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.012, duration_ms=12, data={}
+timestamp=[2021-11-10 16:14:23], mode=WORKBENCH_UI_INIT, duration=0:00:00.601, duration_ms=601, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-10 16:20:03], mode=PLATFORM_GENERATION, duration=0:00:08.576, duration_ms=8576, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-10 16:20:05], mode=BUILD, duration=0:00:01.275, duration_ms=1275, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:20:15], mode=PLATFORM_GENERATION, duration=0:00:05.497, duration_ms=5497, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-10 16:20:17], mode=BUILD, duration=0:00:01.169, duration_ms=1169, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:24:07], mode=BUILD, duration=0:00:00.320, duration_ms=320, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:31:24], mode=BUILD, duration=0:00:00.170, duration_ms=170, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:31:35], mode=BUILD, duration=0:00:00.270, duration_ms=270, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:33:34], mode=BUILD, duration=0:00:00.267, duration_ms=267, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:34:28], mode=BUILD, duration=0:00:00.270, duration_ms=270, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:35:01], mode=BUILD, duration=0:00:00.269, duration_ms=269, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:45:14], mode=BUILD, duration=0:00:00.269, duration_ms=269, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:53:46], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 16:54:26], mode=PLATFORM_GENERATION, duration=0:00:05.641, duration_ms=5641, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-10 16:54:28], mode=BUILD, duration=0:00:01.169, duration_ms=1169, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 17:04:55], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 17:13:07], mode=BUILD, duration=0:00:00.320, duration_ms=320, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 17:15:41], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 17:19:31], mode=BUILD, duration=0:00:00.371, duration_ms=371, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 17:24:12], mode=BUILD, duration=0:00:00.322, duration_ms=322, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 19:21:21], mode=WORKBENCH_START, duration=0:00:04.467, duration_ms=4467, data={}
+timestamp=[2021-11-10 19:21:21], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2021-11-10 19:21:22], mode=WORKBENCH_UI_INIT, duration=0:00:00.533, duration_ms=533, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-10 19:36:12], mode=PLATFORM_GENERATION, duration=0:00:04.325, duration_ms=4325, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-10 19:36:12], mode=BUILD, duration=0:00:00.179, duration_ms=179, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 19:39:52], mode=PLATFORM_GENERATION, duration=0:00:04.430, duration_ms=4430, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-10 19:40:08], mode=PLATFORM_GENERATION, duration=0:00:04.381, duration_ms=4381, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-10 19:42:15], mode=PLATFORM_GENERATION, duration=0:00:04.540, duration_ms=4540, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-10 19:42:16], mode=BUILD, duration=0:00:00.218, duration_ms=218, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 19:44:46], mode=BUILD, duration=0:00:00.118, duration_ms=118, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 19:45:02], mode=BUILD, duration=0:00:00.268, duration_ms=268, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 19:47:28], mode=BUILD, duration=0:00:00.117, duration_ms=117, data={name=APDAQ_subsys, configuration=Debug, clean_build=true}
+timestamp=[2021-11-10 19:47:30], mode=BUILD, duration=0:00:01.170, duration_ms=1170, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 19:50:28], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 19:55:37], mode=BUILD, duration=0:00:00.116, duration_ms=116, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 19:56:23], mode=BUILD, duration=0:00:00.118, duration_ms=118, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 20:07:15], mode=BUILD, duration=0:00:00.318, duration_ms=318, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 20:15:15], mode=BUILD, duration=0:00:00.320, duration_ms=320, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 20:20:06], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 20:23:50], mode=BUILD, duration=0:00:00.319, duration_ms=319, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-10 20:55:45], mode=PLATFORM_GENERATION, duration=0:00:05.598, duration_ms=5598, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-10 20:55:47], mode=BUILD, duration=0:00:01.220, duration_ms=1220, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:00:19], mode=WORKBENCH_START, duration=0:00:04.387, duration_ms=4387, data={}
+timestamp=[2021-11-12 14:00:19], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.019, duration_ms=19, data={}
+timestamp=[2021-11-12 14:00:20], mode=WORKBENCH_UI_INIT, duration=0:00:00.529, duration_ms=529, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-12 14:00:28], mode=PLATFORM_GENERATION, duration=0:00:04.415, duration_ms=4415, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-12 14:00:29], mode=BUILD, duration=0:00:01.123, duration_ms=1123, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:44:09], mode=BUILD, duration=0:00:00.168, duration_ms=168, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:44:19], mode=BUILD, duration=0:00:00.765, duration_ms=765, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:46:39], mode=BUILD, duration=0:00:00.314, duration_ms=314, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:47:27], mode=BUILD, duration=0:00:00.315, duration_ms=315, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:49:25], mode=BUILD, duration=0:00:00.316, duration_ms=316, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:50:10], mode=BUILD, duration=0:00:00.317, duration_ms=317, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:51:12], mode=BUILD, duration=0:00:00.466, duration_ms=466, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:52:16], mode=BUILD, duration=0:00:00.114, duration_ms=114, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-12 14:58:44], mode=BUILD, duration=0:00:00.466, duration_ms=466, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-13 13:54:55], mode=WORKBENCH_START, duration=0:00:04.422, duration_ms=4422, data={}
+timestamp=[2021-11-13 13:54:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.015, duration_ms=15, data={}
+timestamp=[2021-11-13 13:54:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.579, duration_ms=579, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-13 15:56:13], mode=WORKBENCH_START, duration=0:00:04.813, duration_ms=4813, data={}
+timestamp=[2021-11-13 15:56:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.016, duration_ms=16, data={}
+timestamp=[2021-11-13 15:56:14], mode=WORKBENCH_UI_INIT, duration=0:00:00.573, duration_ms=573, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-15 13:31:47], mode=WORKBENCH_START, duration=0:00:04.684, duration_ms=4684, data={}
+timestamp=[2021-11-15 13:31:47], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2021-11-15 13:31:47], mode=WORKBENCH_UI_INIT, duration=0:00:00.537, duration_ms=537, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-16 14:01:48], mode=WORKBENCH_START, duration=0:00:04.576, duration_ms=4576, data={}
+timestamp=[2021-11-16 14:01:48], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.014, duration_ms=14, data={}
+timestamp=[2021-11-16 14:01:48], mode=WORKBENCH_UI_INIT, duration=0:00:00.512, duration_ms=512, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-16 15:03:35], mode=WORKBENCH_START, duration=0:00:04.449, duration_ms=4449, data={}
+timestamp=[2021-11-16 15:03:35], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.014, duration_ms=14, data={}
+timestamp=[2021-11-16 15:03:36], mode=WORKBENCH_UI_INIT, duration=0:00:00.515, duration_ms=515, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-16 15:04:57], mode=PLATFORM_GENERATION, duration=0:00:06.218, duration_ms=6218, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-16 15:04:57], mode=BUILD, duration=0:00:00.119, duration_ms=119, data={name=APDAQ_subsys, configuration=Debug, clean_build=true}
+timestamp=[2021-11-16 15:04:59], mode=BUILD, duration=0:00:01.772, duration_ms=1772, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-24 19:17:55], mode=WORKBENCH_START, duration=0:00:04.466, duration_ms=4466, data={}
+timestamp=[2021-11-24 19:17:55], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.010, duration_ms=10, data={}
+timestamp=[2021-11-24 19:17:55], mode=WORKBENCH_UI_INIT, duration=0:00:00.499, duration_ms=499, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-24 19:18:45], mode=PLATFORM_GENERATION, duration=0:00:04.275, duration_ms=4275, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-24 19:18:47], mode=BUILD, duration=0:00:01.832, duration_ms=1832, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-24 19:39:53], mode=WORKBENCH_START, duration=0:00:04.317, duration_ms=4317, data={}
+timestamp=[2021-11-24 19:39:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.012, duration_ms=12, data={}
+timestamp=[2021-11-24 19:39:53], mode=WORKBENCH_UI_INIT, duration=0:00:00.437, duration_ms=437, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-24 20:06:03], mode=WORKBENCH_START, duration=0:00:04.254, duration_ms=4254, data={}
+timestamp=[2021-11-24 20:06:03], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.012, duration_ms=12, data={}
+timestamp=[2021-11-24 20:06:03], mode=WORKBENCH_UI_INIT, duration=0:00:00.464, duration_ms=464, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-24 20:18:56], mode=WORKBENCH_START, duration=0:00:04.278, duration_ms=4278, data={}
+timestamp=[2021-11-24 20:18:56], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.018, duration_ms=18, data={}
+timestamp=[2021-11-24 20:18:57], mode=WORKBENCH_UI_INIT, duration=0:00:00.477, duration_ms=477, data={editors_count=5, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-29 18:40:19], mode=WORKBENCH_START, duration=0:00:04.529, duration_ms=4529, data={}
+timestamp=[2021-11-29 18:40:19], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.013, duration_ms=13, data={}
+timestamp=[2021-11-29 18:40:19], mode=WORKBENCH_UI_INIT, duration=0:00:00.553, duration_ms=553, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-11-29 18:40:28], mode=PLATFORM_GENERATION, duration=0:00:06.192, duration_ms=6192, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-29 18:40:30], mode=BUILD, duration=0:00:01.775, duration_ms=1775, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-11-29 18:46:09], mode=PLATFORM_GENERATION, duration=0:00:05.587, duration_ms=5587, data={name=APDAQ_subsys_wrapper}
+timestamp=[2021-11-29 18:46:11], mode=BUILD, duration=0:00:01.971, duration_ms=1971, data={name=APDAQ_subsys, configuration=Debug, clean_build=false}
+timestamp=[2021-12-01 20:02:23], mode=WORKBENCH_START, duration=0:00:04.552, duration_ms=4552, data={}
+timestamp=[2021-12-01 20:02:24], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.011, duration_ms=11, data={}
+timestamp=[2021-12-01 20:02:24], mode=WORKBENCH_UI_INIT, duration=0:00:00.507, duration_ms=507, data={editors_count=4, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-12-01 20:07:51], mode=WORKBENCH_START, duration=0:00:04.185, duration_ms=4185, data={}
+timestamp=[2021-12-01 20:07:51], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.016, duration_ms=16, data={}
+timestamp=[2021-12-01 20:07:52], mode=WORKBENCH_UI_INIT, duration=0:00:00.391, duration_ms=391, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-12-03 19:33:34], mode=WORKBENCH_START, duration=0:00:04.177, duration_ms=4177, data={}
+timestamp=[2021-12-03 19:33:34], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.014, duration_ms=14, data={}
+timestamp=[2021-12-03 19:33:34], mode=WORKBENCH_UI_INIT, duration=0:00:00.347, duration_ms=347, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}
+timestamp=[2021-12-03 20:22:03], mode=WORKBENCH_START, duration=0:00:04.113, duration_ms=4113, data={}
+timestamp=[2021-12-03 20:22:04], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.012, duration_ms=12, data={}
+timestamp=[2021-12-03 20:22:04], mode=WORKBENCH_UI_INIT, duration=0:00:00.370, duration_ms=370, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=APDAQ_subsys,APDAQ_subsys_system,APDAQ_subsys_wrapper,RemoteSystemsTempFiles}

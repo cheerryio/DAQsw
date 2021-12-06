@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
+	</section>
+	<section name="PDOMSearchPage">
+		<item value="false" key="caseSensitive"/>
+		<item value="227191" key="searchFlags"/>
+		<list key="previousPatterns">
+			<item value="24576"/>
+			<item value="12288"/>
+			<item value="mmc_send_status"/>
+			<item value="udelay"/>
+			<item value="vTaskDelay"/>
+			<item value="idleCnt"/>
+		</list>
+	</section>
+	<section name="IncludeSysmbolsPropertyPage">
+		<item value="0" key="pageIndex"/>
+	</section>
+	<section name="completion_proposal_size">
+	</section>
+</section>

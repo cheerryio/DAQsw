@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="DNCDAQ_subsys_system-imgFile" value="/home/dn/DNCDAQ_subsys_sw/DNCDAQ_subsys_system/_ide/bootimage/BOOT.bin"/>
+	<item key="DNCDAQ_subsys_system-offSet" value=""/>
+	<item key="DNCDAQ_subsys_system-initFile" value="/home/dn/DNCDAQ_subsys_sw/DNCDAQ_subsys_wrapper/export/DNCDAQ_subsys_wrapper/sw/DNCDAQ_subsys_wrapper/boot/fsbl.elf"/>
+	<item key="DNCDAQ_subsys_system-flashType" value="qspi-x8-dual_parallel"/>
+	<item key="DNCDAQ_subsys_system-verifyFlash" value="false"/>
+	<item key="DNCDAQ_subsys_system-blankCheck" value="false"/>
+	<item key="DNCDAQ_subsys_system-device" value="Auto Detect"/>
+	<item key="DNCDAQ_subsys_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="DNCDAQ_subsys_system"/>
+</section>

@@ -1,0 +1,81 @@
+#include "TskHif.h"
+
+const int tskHifPrio = 2;
+const int tskHifStkSize = 16384;
+static TaskHandle_t tskHifHandle;
+
+extern IicMaster *iic;
+extern PCF8563 *rtc;
+extern DateTime32 DateTime;
+
+QueueHandle_t tskHifMsgQ;
+extern XScuGic xInterruptController;
+
+void setPcf8574aLed(unsigned char msk, unsigned char led)
+{
+    static unsigned char val = 0x0;
+    val = (val & ~msk) | led;
+    iic->WriteRegPush(0b01110000, 1, 1, ~(val << 5));
+    iic->WriteRegPop(1);
+}
+
+static void tskHif(void* pvParameters){
+    if(DEBUG)
+        printf("in data Hif\n\r");
+    tskHifMsg_t msg;
+    while(1){
+        xQueueReceive(tskHifMsgQ,&msg,portMAX_DELAY);
+        iic->WaitIdle();
+        switch(msg.id){
+            case YELLOW_ON:
+                setPcf8574aLed(0b100, 0b100);
+                break;
+            case YELLOW_OFF:
+                setPcf8574aLed(0b100, 0b000);
+                break;
+            case YELLOW_BLINK:
+
+                break;
+            case GREEN_ON:
+                setPcf8574aLed(0b010, 0b010);
+                break;
+            case GREEN_OFF:
+                setPcf8574aLed(0b010, 0b000);
+                break;
+            case GREEN_BLINK:
+
+                break;
+            case RED_ON:
+                setPcf8574aLed(0b001, 0b001);
+                break;
+            case RED_OFF:
+                setPcf8574aLed(0b001, 0b000);
+                break;
+            case RED_BLINK:
+
+                break;
+        }
+    }
+    vTaskDelete(NULL);
+}
+
+void tskHifInit()
+{
+    int ret;
+	iic=new IicMaster(0x43C00000, &xInterruptController, XPAR_FABRIC_AXI4LITE_BUFFERED_IIC_MASTER_0_VEC_ID, NULL, NULL, NULL, NULL);
+    rtc=new PCF8563(iic,0x51);
+	tskHifMsgQ=xQueueCreate(32, sizeof(tskHifMsg_t));
+	configASSERT(tskHifMsgQ);
+
+    iic->WaitIdle();
+    // 0b0001_1111 --> reg3: 3 outputs for led & 5 inputs for key
+    iic->WriteRegPush(0b01110000, 2, 1, 0x00);
+    iic->WriteRegPop(1);
+    iic->WriteRegPush(0b01110000, 3, 1, 0x1f);
+    iic->WriteRegPop(1);
+    iic->WaitIdle();
+    vTaskDelay(50);
+
+    ret = xTaskCreate(tskHif, "TskHif", tskHifStkSize, NULL, tskHifPrio, &tskHifHandle);
+    configASSERT(ret == pdPASS);
+}

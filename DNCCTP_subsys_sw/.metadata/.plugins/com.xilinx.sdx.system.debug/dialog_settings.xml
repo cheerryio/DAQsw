@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="DNCCTP_subsys_system-imgFile" value="/home/dn/DNCCTP_subsys_sw/DNCCTP_subsys_system/_ide/bootimage/BOOT.bin"/>
+	<item key="DNCCTP_subsys_system-offSet" value=""/>
+	<item key="DNCCTP_subsys_system-initFile" value="/home/dn/DNCCTP_subsys_sw/DNCCTP_subsys_wrapper/export/DNCCTP_subsys_wrapper/sw/DNCCTP_subsys_wrapper/boot/fsbl.elf"/>
+	<item key="DNCCTP_subsys_system-flashType" value="qspi-x8-dual_parallel"/>
+	<item key="DNCCTP_subsys_system-verifyFlash" value="false"/>
+	<item key="DNCCTP_subsys_system-blankCheck" value="false"/>
+	<item key="DNCCTP_subsys_system-device" value="Auto Detect"/>
+	<item key="DNCCTP_subsys_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="DNCCTP_subsys_system"/>
+</section>

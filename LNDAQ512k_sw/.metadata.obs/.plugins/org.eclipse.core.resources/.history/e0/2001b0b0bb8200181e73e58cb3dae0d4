@@ -1,0 +1,299 @@
+/*
+ * Empty C++ Application
+ */
+
+// freeRTOS
+#include <FreeRTOS.h>
+#include <task.h>
+#include <queue.h>
+#include <semphr.h>
+#include <timers.h>
+// xilinx
+#include <xil_printf.h>
+#include <xparameters.h>
+#include <mb_interface.h>
+#include <xintc.h>
+#include <sleep.h>
+#include "MiniDmaFifo2Mem/MiniDmaFifo2Mem.h"
+#include <xil_types.h>
+#include <xstatus.h>
+
+#include "xilffs/ff.h"
+#include <stdio.h>
+#include "IicMaster/IicMaster.h"
+#include <xgpio.h>
+
+XGpio Led;
+
+__attribute__ ((section(".onchip"), aligned(64))) u8 data0[12288];
+__attribute__ ((section(".onchip"), aligned(64))) u8 data1[12288];
+u8 * volatile dataAvil = data0;
+
+#pragma pack(push)
+#pragma pack(1)
+struct MonoWavHeader
+{
+	char ChunkID[4];// = {'R','I','F','F'};
+	unsigned int ChunkSize;// = 36 + FILE_BYTES_PER_SMP * NCH * SRATE_DECI * 60 * MINUTES_PER_FILE;
+	char Format[4];// = {'W','A','V','E'};
+	char Subchunk1ID[4];// = {'f','m','t',' '};
+	unsigned int Subchunk1Size;// = 16;
+	unsigned short AudioFormat;// = 1;	// PCM
+	unsigned short NumChannels;// = NCH;
+	unsigned int SampleRate;// = SRATE_DECI;
+	unsigned int ByteRate;// = FILE_BYTES_PER_SMP * NCH * SRATE_DECI;
+	unsigned short BlockAlign;// = NCH * FILE_BYTES_PER_SMP;
+	unsigned short BitsPerSample;// = 8 * FILE_BYTES_PER_SMP;
+	char Subchunk2ID[4];// = {'d','a','t','a'};
+	unsigned int Subchunk2Size;// = FILE_BYTES_PER_SMP * NCH * SRATE_DECI * 60 * MINUTES_PER_FILE;
+	MonoWavHeader()
+	{
+		ChunkID[0] = 'R'; ChunkID[1] = 'I'; ChunkID[2] = 'F'; ChunkID[3] = 'F';
+		ChunkSize = 36; // + FILE_BYTES_PER_SMP * NCH * SRATE_DECI * 60 * MINUTES_PER_FILE;
+		Format[0] = 'W'; Format[1] = 'A'; Format[2] = 'V'; Format[3] = 'E';
+		Subchunk1ID[0] = 'f'; Subchunk1ID[1] = 'm'; Subchunk1ID[2] = 't'; Subchunk1ID[3] = ' ';
+		Subchunk1Size = 16;
+		AudioFormat = 1;
+		NumChannels = 1;
+		SampleRate = 512000;
+		ByteRate = 512000 * 3;
+		BlockAlign = 3;
+		BitsPerSample = 24;
+		Subchunk2ID[0] = 'd'; Subchunk2ID[1] = 'a'; Subchunk2ID[2] = 't'; Subchunk2ID[3] = 'a';
+		Subchunk2Size = 0; //FILE_BYTES_PER_SMP * NCH * SRATE_DECI * 60 * MINUTES_PER_FILE;
+	}
+};
+#pragma pack(pop)
+MonoWavHeader wavHeader;
+
+typedef union _DateTime
+{
+	u32 Value;
+	struct
+	{
+		u32 DSecond 		: 5;
+		u32 Minute			: 6;
+		u32 Hour			: 5;
+		u32 Date			: 5;
+		u32 Month			: 4;
+		u32 YearFrom1980	: 7;
+	};
+} DateTime;
+
+volatile u32 dateTime =   ((u32)(2018U - 1980U) << 25U)	/* initialize to June 18, 2018 */
+						| ((u32)6 << 21)
+						| ((u32)18 << 16)
+						| ((u32)0 << 11)
+						| ((u32)0 << 5)
+						| ((u32)0 >> 1);
+
+XIntc Intc;
+
+void InitIntc()
+{
+    int sts;
+
+    sts = XIntc_Initialize(&Intc, XPAR_INTC_0_DEVICE_ID);
+    configASSERT(sts == XST_SUCCESS);
+
+    sts = XIntc_Start(&Intc, XIN_REAL_MODE);
+    configASSERT(sts == XST_SUCCESS);
+
+    Xil_ExceptionInit();
+    Xil_ExceptionRegisterHandler(
+            XIL_EXCEPTION_ID_INT,
+            (Xil_ExceptionHandler)XIntc_InterruptHandler,
+            &Intc
+    );
+    Xil_ExceptionEnable();
+}
+
+void SetLed(u32 mask)
+{
+	XGpio_DiscreteSet(&Led, 1, mask);
+}
+void ClrLed(u32 mask)
+{
+	XGpio_DiscreteClear(&Led, 1, mask);
+}
+
+
+
+TaskHandle_t tskMasterHandle;
+SemaphoreHandle_t semDmaFinish;
+void dmaCallback(MiniDmaFifo2Mem::RegIntr intSts, u64 prevAddr, void *arg)
+{
+	configASSERT(!intSts.error);
+	dataAvil = (u8 *)prevAddr;
+	int ret;
+	BaseType_t wake;
+	ret = xSemaphoreGiveFromISR(semDmaFinish, &wake);
+	configASSERT(ret == pdPASS || ret == errQUEUE_FULL);
+}
+
+volatile int idleCnt = 0;
+void vApplicationIdleHook()
+{
+	idleCnt++;
+}
+
+__attribute__ ((section(".onchip"), aligned(64))) FATFS fs;
+__attribute__ ((section(".onchip"), aligned(64))) FIL fil;        /* File object */
+void initSDFAT()
+{
+	FRESULT fr;     /* FatFs return code */
+	f_mount(&fs, "", 0);
+	fr = f_open(&fil, "message.txt", FA_CREATE_ALWAYS | FA_WRITE);
+	int l = f_puts("hello xilffs!\r\n", &fil);
+//	fr = f_sync(&fil);
+	fr = f_close(&fil);
+    configASSERT(fr == FR_OK);
+}
+
+char fn[64] = {'\0'};
+static void tskMaster(void *param)
+{
+
+//	while(1)
+//		vTaskDelay(1);
+
+	initSDFAT();
+
+	semDmaFinish = xSemaphoreCreateBinary();
+	configASSERT(semDmaFinish);
+
+	MiniDmaFifo2Mem dma(XPAR_PERIPHERALS_MINIDMAFIFO2MEM_0_BASEADDR);
+
+	dma.SetAddress((u64)data0, (u64)data1);
+	dma.SetFifoPentTh(448);
+	MiniDmaFifo2Mem::RegControll ctrl;
+	ctrl.Penetrate = true;
+	ctrl.ContTrig = false;
+	ctrl.FrameTrig = true;
+	dma.SetControl(ctrl);
+	dma.RegisterCallback(
+			&Intc,
+			XPAR_PERIPHERALS_MICROBLAZE_0_AXI_INTC_PERIPHERALS_MINIDMAFIFO2MEM_0_INTR_INTR,
+			dmaCallback,
+			(void *)&dma
+			);
+	vTaskDelay(500);
+
+
+//	void speedTest();
+////	speedTest();
+
+	dma.StartTransfer(12288/4);
+
+//	u16 id = 0;
+	int ret;
+	FRESULT fr;     /* FatFs return code */
+	UINT bw;
+
+	DateTime dt;
+	dt.Value = dateTime;
+	sprintf(fn, "%04d%02d%02d", (int)(dt.YearFrom1980 + 1980), (int)dt.Month, (int)dt.Date);
+	fr = f_mkdir(fn);
+	while(true)
+	{
+		u32 chunkSize;
+		u32 dataSize = 0;
+		dt.Value = dateTime;
+		sprintf(fn + 8, "/%02d%02d%02d.bin", (int)dt.Hour, (int)dt.Minute, (int)(dt.DSecond * 2));
+		fr = f_open(&fil, fn, FA_CREATE_ALWAYS | FA_WRITE);
+		configASSERT(fr == FR_OK);
+		fr = f_write(&fil, (void *)&wavHeader, sizeof(MonoWavHeader), &bw);
+		configASSERT(fr == FR_OK);
+		for(int sec = 0; sec < 60; sec++)	// 1min
+		{
+			for(int b = 0; b < 125; b++)	// 1sec
+			{
+				ClrLed(0x1);
+				ret = xSemaphoreTake(semDmaFinish, portMAX_DELAY);
+				SetLed(0x1);
+				configASSERT(ret == pdPASS);
+//				fr = f_write(&fil, dataAvil, 12288, &bw);
+//				configASSERT(fr == FR_OK && bw == 12288);
+				dataSize += 12288;
+			}
+			chunkSize = dataSize + 36;
+			SetLed(0x2);
+//			f_lseek(&fil, (int)&(((MonoWavHeader *)0)->ChunkSize));
+//			f_write(&fil, &chunkSize, 4, &bw);
+//			f_lseek(&fil, (int)&(((MonoWavHeader *)0)->Subchunk2Size));
+//			f_write(&fil, &dataSize, 4, &bw);
+//			f_lseek(&fil, file_size(&fil));
+//			f_sync(&fil);
+			ClrLed(0x2);
+		}
+		fr = f_close(&fil);
+	    configASSERT(fr == FR_OK);
+	}
+
+}
+
+void setDs3231DateTime(IicMaster *iic, u16 yr, u8 mon, u8 dat, u8 day, u8 hr, u8 min, u8 sec)
+{
+	sec = sec % 10 | sec / 10 << 4;
+	min = min % 10 | min / 10 << 4;
+	hr	= hr  % 10 | hr  / 10 << 4;	// 24hr format
+	day = day == 0 ? 7 : day;
+	dat = dat % 10 | dat / 10 << 4;
+	mon = mon % 10 | mon / 10 << 4 | (yr >= 2100 ? 0x80 : 0x00);
+	yr  = yr  % 100;
+	yr  = yr  % 10 | yr  / 10 << 4;
+	iic->WriteRegPush(0xd0, 0, 7, sec, min, hr, day, dat, mon, yr);
+	iic->WriteRegPop(7);
+}
+
+TaskHandle_t tskDateTimeHandle;
+static void tskDateTime(void *arg)
+{
+	DateTime dt;
+	u8 sec, min, hr, day, date, month, year;
+	IicMaster iic(
+			XPAR_PERIPHERALS_AXI4LITE_BUFFERED_II_0_S_AXI_BASEADDR,
+			&Intc,
+			XPAR_PERIPHERALS_MICROBLAZE_0_AXI_INTC_PERIPHERALS_AXI4LITE_BUFFERED_II_0_IRQ_INTR,
+			NULL, NULL, NULL, NULL);
+
+//	setDs3231DateTime(&iic, 2018, 7, 7, 6, 1, 18, 0);
+
+	iic.ReadRegPush(0xd0, 0, 7);
+	vTaskDelay(50);
+	while(true)
+	{
+		iic.ReadRegPop(7, &sec, &min, &hr, &day, &date, &month, &year);
+		dt.DSecond = ((sec & 0xf) + 10 * (sec >> 4)) / 2;
+		dt.Minute  =  (min & 0xf) + 10 * (min >> 4);
+		dt.Hour	= hr & 0x40 ?
+				(hr & 0x20 ? 12 : 0) + (hr & 0xf) + 10 * (hr >> 4 & 0x1) :
+				(hr & 0xf) + 10 * (hr >> 4 & 0x3);
+		dt.Date = (date & 0xf) + 10 * (date >> 4);
+		dt.Month = (month & 0xf) + 10 * (month >> 4 & 0x1);
+		dt.YearFrom1980 = (year & 0xf) + 10 * (year >> 4) + 100 * (month >> 7 & 0x1);
+		dt.YearFrom1980 = dt.YearFrom1980 + 20;
+		dateTime = dt.Value;
+		iic.ReadRegPush(0xd0, 0, 7);
+		vTaskDelay(50);
+	}
+}
+
+int main()
+{
+	microblaze_enable_icache();
+	microblaze_enable_dcache();
+	InitIntc();
+
+	int rtn = XGpio_Initialize(&Led, XPAR_PERIPHERALS_AXI_GPIO_LEDS_DEVICE_ID);
+	configASSERT(rtn == XST_SUCCESS);
+
+	xTaskCreate(tskMaster, "TskMaster", 8192, NULL, 8, &tskMasterHandle);
+	xTaskCreate(tskDateTime, "TskDateTime", 512, NULL, 4, &tskDateTimeHandle);
+
+	vTaskStartScheduler();
+
+	while(1);
+
+	return 0;
+}

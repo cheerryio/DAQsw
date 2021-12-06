@@ -1,0 +1,29 @@
+18:55:56 **** Auto Build of configuration Debug for project daq24b512kca ****
+make all 
+Building file: ../src/main.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -I../../daq24b512kca_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'void initSDFAT()':
+../src/main.cc:147:6: warning: unused variable 'l' [-Wunused-variable]
+  int l = f_puts("hello xilffs!\r\n", &fil);
+      ^
+../src/main.cc: In function 'void tskMaster(void*)':
+../src/main.cc:199:7: warning: variable 'chunkSize' set but not used [-Wunused-but-set-variable]
+   u32 chunkSize;
+       ^~~~~~~~~
+Finished building: ../src/main.cc
+ 
+Building target: daq24b512kca.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../daq24b512kca_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-div -mcpu=v10.0 -mno-xl-soft-mul -mxl-multiply-high -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "daq24b512kca.elf"  ./src/xilffs/cc932.o ./src/xilffs/diskio.o ./src/xilffs/ff.o  ./src/sdc_ctrl/mmc.o ./src/sdc_ctrl/ocsdc.o  ./src/MiniDmaFifo2Mem/MiniDmaFifo2Mem.o  ./src/IicMaster/IicMaster.o  ./src/main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,-lstdc++,--end-group
+Finished building target: daq24b512kca.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size daq24b512kca.elf  |tee "daq24b512kca.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 205064	   2836	1180936	1388836	 153124	daq24b512kca.elf
+Finished building: daq24b512kca.elf.size
+ 
+
+18:55:56 Build Finished (took 109ms)
+

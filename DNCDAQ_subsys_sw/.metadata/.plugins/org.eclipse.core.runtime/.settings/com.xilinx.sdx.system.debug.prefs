@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:heap-size=33554432
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCDAQ_subsys\:stack-size=33554432
+eclipse.preferences.version=1

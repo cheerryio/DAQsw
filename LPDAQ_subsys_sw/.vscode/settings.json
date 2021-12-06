@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.do": "shellscript",
+        "xscugic.h": "c",
+        "xparameters.h": "c"
+    }
+}

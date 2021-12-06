@@ -1,0 +1,24 @@
+20:02:02 **** Build of configuration Release for project bootloader ****
+make all 
+Building file: ../src/bootloader.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/bootloader.o" -I../../bootloader_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/bootloader.d" -MT"src/bootloader.o" -o "src/bootloader.o" "../src/bootloader.c"
+../src/bootloader.c:29:2: warning: #warning "Please correct the 8 definitions below!" [-Wcpp]
+ #warning "Please correct the 8 definitions below!"
+  ^~~~~~~
+Finished building: ../src/bootloader.c
+ 
+Building target: bootloader.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../bootloader_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "bootloader.elf"  ./src/bootloader.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: bootloader.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size bootloader.elf  |tee "bootloader.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5288	    392	   2712	   8392	   20c8	bootloader.elf
+Finished building: bootloader.elf.size
+ 
+
+20:02:02 Build Finished (took 866ms)
+

@@ -1,0 +1,60 @@
+/*
+ * FileRW.h
+ *
+ *  Created on: Feb 10, 2017
+ *      Author: loywong
+ */
+
+#ifndef FILERW_H_
+#define FILERW_H_
+
+#include <ti/sysbios/knl/Semaphore.h>
+#include "Params.h"
+
+//#ifdef __cplusplus
+//	extern "C" {
+//#endif
+
+#pragma pack(push)
+#pragma pack(1)
+struct MonoWavHeader
+{
+	char ChunkID[4];// = {'R','I','F','F'};
+	unsigned int ChunkSize;// = 36 + FILE_BYTES_PER_SMP * NCH * SRATE_DECI * 60 * MINUTES_PER_FILE;
+	char Format[4];// = {'W','A','V','E'};
+	char Subchunk1ID[4];// = {'f','m','t',' '};
+	unsigned int Subchunk1Size;// = 16;
+	unsigned short AudioFormat;// = 1;	// PCM
+	unsigned short NumChannels;// = NCH;
+	unsigned int SampleRate;// = SRATE_DECI;
+	unsigned int ByteRate;// = FILE_BYTES_PER_SMP * NCH * SRATE_DECI;
+	unsigned short BlockAlign;// = NCH * FILE_BYTES_PER_SMP;
+	unsigned short BitsPerSample;// = 8 * FILE_BYTES_PER_SMP;
+	char Subchunk2ID[4];// = {'d','a','t','a'};
+	unsigned int Subchunk2Size;// = FILE_BYTES_PER_SMP * NCH * SRATE_DECI * 60 * MINUTES_PER_FILE;
+	MonoWavHeader()
+	{
+		ChunkID[0] = 'R'; ChunkID[1] = 'I'; ChunkID[2] = 'F'; ChunkID[3] = 'F';
+		ChunkSize = 36; // + FILE_BYTES_PER_SMP * NCH * SRATE_DECI * 60 * MINUTES_PER_FILE;
+		Format[0] = 'W'; Format[1] = 'A'; Format[2] = 'V'; Format[3] = 'E';
+		Subchunk1ID[0] = 'f'; Subchunk1ID[1] = 'm'; Subchunk1ID[2] = 't'; Subchunk1ID[3] = ' ';
+		Subchunk1Size = 16;
+		AudioFormat = 1;
+		NumChannels = 1;
+		SampleRate = 512000;
+		ByteRate = 512000 * 3;
+		BlockAlign = 3;
+		BitsPerSample = 24;
+		Subchunk2ID[0] = 'd'; Subchunk2ID[1] = 'a'; Subchunk2ID[2] = 't'; Subchunk2ID[3] = 'a';
+		Subchunk2Size = 0; //FILE_BYTES_PER_SMP * NCH * SRATE_DECI * 60 * MINUTES_PER_FILE;
+	}
+};
+#pragma pack(pop)
+
+void ConstructTskFileRW();
+
+//#ifdef __cplusplus
+//	}
+//#endif
+
+#endif /* FILERW_H_ */

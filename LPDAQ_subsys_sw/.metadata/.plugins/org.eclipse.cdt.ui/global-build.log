@@ -1,0 +1,9 @@
+Nothing to build in platform 'LPDAQ_subsys3_wrapper'
+
+13:20:35 **** Incremental Build of configuration Debug for project LPDAQ_subsys ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.

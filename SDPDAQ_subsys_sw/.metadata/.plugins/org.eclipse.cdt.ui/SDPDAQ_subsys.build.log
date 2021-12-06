@@ -1,0 +1,92 @@
+11:05:17 **** Incremental Build of configuration Debug for project SDPDAQ_subsys ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/TskGps/TskGps.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/TskGps/TskGps.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/SDPDAQ_subsys_sw/bd_wrapper/export/bd_wrapper/sw/bd_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/TskGps/TskGps.d" -MT"src/TskGps/TskGps.o" -o "src/TskGps/TskGps.o" "../src/TskGps/TskGps.cc"
+In file included from ../src/TskGps/TskGps.h:3,
+                 from ../src/TskGps/TskGps.cc:1:
+../src/TskGps/../common.h:22:1: warning: 'typedef' was ignored in this declaration
+   22 | typedef enum topMode
+      | ^~~~~~~
+../src/TskGps/../common.h:53:1: warning: 'typedef' was ignored in this declaration
+   53 | typedef struct tskTopMsg_t{
+      | ^~~~~~~
+../src/TskGps/../common.h:58:1: warning: 'typedef' was ignored in this declaration
+   58 | typedef struct tskDbgUartMsg_t{
+      | ^~~~~~~
+../src/TskGps/../common.h:69:1: warning: 'typedef' was ignored in this declaration
+   69 | typedef struct tskDataMsg_t{
+      | ^~~~~~~
+../src/TskGps/../common.h:80:1: warning: 'typedef' was ignored in this declaration
+   80 | typedef struct tskWriteMsg_t{
+      | ^~~~~~~
+../src/TskGps/../common.h:84:1: warning: 'typedef' was ignored in this declaration
+   84 | typedef struct dtime{
+      | ^~~~~~~
+../src/TskGps/../common.h:89:1: warning: 'typedef' was ignored in this declaration
+   89 | typedef struct ctrlReg_t{
+      | ^~~~~~~
+../src/TskGps/../common.h:104:1: warning: 'typedef' was ignored in this declaration
+  104 | typedef struct FuncAndCmd
+      | ^~~~~~~
+../src/TskGps/TskGps.cc: In function 'void dbgDateTime(const tm*, u16)':
+../src/TskGps/TskGps.cc:89:6: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+   89 |  int ret, size;
+      |      ^~~
+../src/TskGps/TskGps.cc:89:11: warning: variable 'size' set but not used [-Wunused-but-set-variable]
+   89 |  int ret, size;
+      |           ^~~~
+../src/TskGps/TskGps.cc: In function 'void dbgDateTime(const tm*)':
+../src/TskGps/TskGps.cc:108:6: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  108 |  int ret, size;
+      |      ^~~
+../src/TskGps/TskGps.cc:108:11: warning: variable 'size' set but not used [-Wunused-but-set-variable]
+  108 |  int ret, size;
+      |           ^~~~
+../src/TskGps/TskGps.cc: In function 'void dbgPosition(float, float, float)':
+../src/TskGps/TskGps.cc:121:6: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  121 |  int ret;
+      |      ^~~
+../src/TskGps/TskGps.cc: In function 'void dbgGpsInfo(char*)':
+../src/TskGps/TskGps.cc:131:6: warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  131 |  int ret;
+      |      ^~~
+../src/TskGps/TskGps.cc: In function 'void tskGps(void*)':
+../src/TskGps/TskGps.cc:207:26: warning: comparison of integer expressions of different signedness: 'int' and 'size_t' {aka 'unsigned int'} [-Wsign-compare]
+  207 |         for(int i = 0; i < strlen(gpsInfo); i++){
+      |                        ~~^~~~~~~~~~~~~~~~~
+../src/TskGps/TskGps.cc:192:6: warning: unused variable 'ret' [-Wunused-variable]
+  192 |  int ret;
+      |      ^~~
+Finished building: ../src/TskGps/TskGps.cc
+ 
+Building file: ../src/TskGps/Ublox.cpp
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O2 -g3 -c -fmessage-length=0 -MT"src/TskGps/Ublox.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/SDPDAQ_subsys_sw/bd_wrapper/export/bd_wrapper/sw/bd_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/TskGps/Ublox.d" -MT"src/TskGps/Ublox.o" -o "src/TskGps/Ublox.o" "../src/TskGps/Ublox.cpp"
+../src/TskGps/Ublox.cpp: In member function 'void Ublox::read_gga()':
+../src/TskGps/Ublox.cpp:101:11: warning: unused variable 'hms' [-Wunused-variable]
+  101 |     float hms;
+      |           ^~~
+../src/TskGps/Ublox.cpp:111:19: warning: 'time' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  111 |             hms = int(time);
+      |                   ^~~~~~~~~
+Finished building: ../src/TskGps/Ublox.cpp
+ 
+Building target: SDPDAQ_subsys.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/dn/SDPDAQ_subsys_sw/bd_wrapper/export/bd_wrapper/sw/bd_wrapper/freertos10_xilinx_ps7_cortexa9_0/bsplib/lib -o "SDPDAQ_subsys.elf"  ./src/XilPeriph/XilAxiDma.o ./src/XilPeriph/XilGpio.o ./src/XilPeriph/XilIntc.o ./src/XilPeriph/XilUartps.o  ./src/TskTransUart/TskTransUart.o  ./src/TskTop/TskTop.o  ./src/TskSD/SD.o ./src/TskSD/TskSD.o  ./src/TskGps/TskGps.o ./src/TskGps/Ublox.o  ./src/TskFFT/TskFFT.o  ./src/TskData/TskData.o ./src/TskData/secCnt.o  ./src/common.o ./src/main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: SDPDAQ_subsys.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size SDPDAQ_subsys.elf  |tee "SDPDAQ_subsys.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 726955	   3940	289996496	290727391	115425df	SDPDAQ_subsys.elf
+Finished building: SDPDAQ_subsys.elf.size
+ 
+
+11:05:17 Build Finished (took 612ms)
+

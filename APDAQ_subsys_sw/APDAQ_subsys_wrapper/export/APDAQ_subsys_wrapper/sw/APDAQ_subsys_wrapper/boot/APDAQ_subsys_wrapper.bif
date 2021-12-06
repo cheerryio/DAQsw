@@ -1,0 +1,7 @@
+/*APDAQ_subsys_wrapper*/
+the_ROM_image:
+{
+  [bootloader]<APDAQ_subsys_wrapper/boot/fsbl.elf>
+   <bitstream> 
+  <elf,ps7_cortexa9_0>
+}

@@ -1,0 +1,15 @@
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:-userDataSections-=.onchip\#
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:.bss=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:.data=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:.onchip=memories_bram_Mem0
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:.rodata=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:.sbss=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:.sbss2=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:.sdata=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:.sdata2=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:.text=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:heap=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:heap-size=1048576
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:stack=memories_mig_7series_0_memaddr
+com.xilinx.sdk.linkgen.prefs.daq24b512k\:stack-size=16384
+eclipse.preferences.version=1

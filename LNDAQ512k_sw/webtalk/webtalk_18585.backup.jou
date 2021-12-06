@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# 
+# Start of session at: Wed Apr 21 17:59:34 2021
+# Process ID: 18585
+# Current directory: /home/ubt/xilinx/duna_daq512k_ca_183/duna_daq512k_ca_183.sdk/webtalk
+# Command line: wbtcv -mode batch -source sdk_webtalk.tcl
+# Log file: /home/ubt/xilinx/duna_daq512k_ca_183/duna_daq512k_ca_183.sdk/webtalk/webtalk.log
+# Journal file: /home/ubt/xilinx/duna_daq512k_ca_183/duna_daq512k_ca_183.sdk/webtalk/webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

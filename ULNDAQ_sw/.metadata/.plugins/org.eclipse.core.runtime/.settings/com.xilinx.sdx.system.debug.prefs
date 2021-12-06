@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.basic\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:heap-size=134217728
+com.xilinx.sdk.linkgen.prefs.basic\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.basic\:stack-size=134217728
+eclipse.preferences.version=1

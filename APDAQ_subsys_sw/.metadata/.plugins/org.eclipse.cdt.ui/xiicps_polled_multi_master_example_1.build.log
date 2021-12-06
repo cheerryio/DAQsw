@@ -1,0 +1,10 @@
+20:53:18 **** Incremental Build of configuration Debug for project xiicps_polled_multi_master_example_1 ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+make[1]: Nothing to be done for 'main-build'.
+
+20:53:18 Build Finished (took 114ms)
+

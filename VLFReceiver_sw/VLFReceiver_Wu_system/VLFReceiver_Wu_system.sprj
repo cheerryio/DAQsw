@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="VLFReceiver_Wu_system" platform="/home/dn/Project/Vivado/duna_VLFReceiver_Wu_V2/Vitis/platform_new/export/platform_new/platform_new.xpfm" platformUID="xilinx:::0.0(custom)" sysConfig="platform_new" runtime="C/C++" dimmRepoPath="" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="VLFReceiver_Wu" domainName="freertos10_xilinx_domain" domainPrettyName="freertos10_xilinx on ps7_cortexa9_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="VLFReceiver_Wu" domainName="freertos10_xilinx_domain" domainPrettyName="freertos10_xilinx on ps7_cortexa9_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="VLFReceiver_Wu" domainName="freertos10_xilinx_domain" domainPrettyName="freertos10_xilinx on ps7_cortexa9_0" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="VLFReceiver_Wu" domainName="freertos10_xilinx_domain" domainPrettyName="freertos10_xilinx on ps7_cortexa9_0" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </lastBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

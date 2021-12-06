@@ -1,0 +1,23 @@
+00:08:36 **** Auto Build of configuration Release for project daq24b512kca ****
+make all 
+Building file: ../src/oled12864/lq12864.cc
+Invoking: MicroBlaze g++ compiler
+mb-g++ -Wall -O2 -c -fmessage-length=0 -MT"src/oled12864/lq12864.o" -I../../daq24b512kca_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/oled12864/lq12864.d" -MT"src/oled12864/lq12864.o" -o "src/oled12864/lq12864.o" "../src/oled12864/lq12864.cc"
+../src/oled12864/lq12864.cc: In member function 'void LQ12864::writePage(u8, volatile u8*)':
+../src/oled12864/lq12864.cc:72:22: warning: narrowing conversion of '(int)(176 | ((unsigned char)((int)(((unsigned char)((int)page)) & 7))))' from 'int' to 'u8 {aka unsigned char}' inside { } [-Wnarrowing]
+  u8 cmds[3] = {(0xb0 | (page & 0x7)), 0x01, 0x10};
+                ~~~~~~^~~~~~~~~~~~~~~
+Finished building: ../src/oled12864/lq12864.cc
+ 
+Building target: daq24b512kca.elf
+Invoking: MicroBlaze g++ linker
+mb-g++ -Wl,-T -Wl,../src/lscript.ld -L../../daq24b512kca_bsp/microblaze_0/lib -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -Wl,--gc-sections -o "daq24b512kca.elf"  ./src/xilffs/cc932.o ./src/xilffs/ccsbcs.o ./src/xilffs/diskio.o ./src/xilffs/ff.o ./src/xilffs/syscall.o  ./src/sdc_ctrl/mmc.o ./src/sdc_ctrl/ocsdc.o  ./src/oled12864/lq12864.o ./src/oled12864/oled_fonts.o  ./src/TskHif/MenuDefines.o ./src/TskHif/PCF8563.o ./src/TskHif/TskHif.o  ./src/MiniDmaFifo2Mem/MiniDmaFifo2Mem.o  ./src/IicMaster/IicMaster.o  ./src/main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,-lstdc++,--end-group
+./src/oled12864/lq12864.o: In function `LQ12864::LQ12864(IicMaster*, unsigned char)':
+(.text._ZN7LQ12864C2EP9IicMasterh+0x100): undefined reference to `LQ12864::onlineSta'
+(.text._ZN7LQ12864C2EP9IicMasterh+0x110): undefined reference to `LQ12864::onlineSta'
+collect2: error: ld returned 1 exit status
+makefile:54: recipe for target 'daq24b512kca.elf' failed
+make: *** [daq24b512kca.elf] Error 1
+
+00:08:37 Build Finished (took 692ms)
+

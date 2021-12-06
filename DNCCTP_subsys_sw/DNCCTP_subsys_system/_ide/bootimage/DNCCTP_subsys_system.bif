@@ -1,0 +1,12 @@
+/* /tmp/bootgen_DNCCTP_subsys_system1880810974418376164/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*DNCCTP_subsys_wrapper*/
+the_ROM_image:
+{
+ [bootloader] /home/dn/DNCCTP_subsys_sw/DNCCTP_subsys_wrapper/export/DNCCTP_subsys_wrapper/sw/DNCCTP_subsys_wrapper/boot/fsbl.elf
+ /home/dn/DNCCTP_subsys_sw/DNCCTP_subsys/_ide/bitstream/DNCCTP_subsys_wrapper.bit
+ /home/dn/DNCCTP_subsys_sw/DNCCTP_subsys/Debug/DNCCTP_subsys.elf
+}

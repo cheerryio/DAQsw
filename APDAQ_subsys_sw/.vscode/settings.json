@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.do": "shellscript",
+        "xilaxidma.h": "c",
+        "xilgpio.h": "c",
+        "common.h": "c",
+        "xparameters.h": "c",
+        "iicmaster.h": "c"
+    }
+}

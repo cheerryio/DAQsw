@@ -1,0 +1,12 @@
+/* /tmp/bootgen_DNCDAQ_subsys_system4974521815172588070/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen  -image <bif_file> -w -o i BOOT.BIN */
+/*DNCDAQ_subsys_wrapper*/
+the_ROM_image:
+{
+ [bootloader] /home/dn/DNCDAQ_subsys_sw/DNCDAQ_subsys_wrapper/export/DNCDAQ_subsys_wrapper/sw/DNCDAQ_subsys_wrapper/boot/fsbl.elf
+ /home/dn/DNCDAQ_subsys_sw/DNCDAQ_subsys/_ide/bitstream/DNCDAQ_subsys_wrapper.bit
+ /home/dn/DNCDAQ_subsys_sw/DNCDAQ_subsys/Debug/DNCDAQ_subsys.elf
+}

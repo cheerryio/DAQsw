@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/home/ubt/xilinx/LNDAQ512k/LNDAQ512k.sdk/boot/Release/boot.elf" key="ll7a35ek_mbsys_wrapper_hw_platform_0-microblaze_0-initElf"/>
+	<item value="Auto Detect" key="ll7a35ek_mbsys_wrapper_hw_platform_0-device"/>
+	<item value="ll7a35ek_mbsys_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="ll7a35ek_mbsys_wrapper.mmi" key="ll7a35ek_mbsys_wrapper_hw_platform_0-bmmFile"/>
+	<item value="Local" key="ll7a35ek_mbsys_wrapper_hw_platform_0-target"/>
+	<item value="ll7a35ek_mbsys_wrapper.bit" key="ll7a35ek_mbsys_wrapper_hw_platform_0-bitFile"/>
+	<item value="false" key="ll7a35ek_mbsys_wrapper_hw_platform_0-partial_bit"/>
+</section>

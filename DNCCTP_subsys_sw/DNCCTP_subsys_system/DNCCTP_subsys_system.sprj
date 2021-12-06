@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="DNCCTP_subsys_system" platform="/home/dn/DNCCTP_subsys_sw/DNCCTP_subsys_wrapper/export/DNCCTP_subsys_wrapper/DNCCTP_subsys_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" sysConfig="DNCCTP_subsys_wrapper" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.697434607">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="DNCCTP_subsys" domainName="freertos10_xilinx_ps7_cortexa9_0" domainPrettyName="freertos10_xilinx_ps7_cortexa9_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+    <lastBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="DNCCTP_subsys" domainName="freertos10_xilinx_ps7_cortexa9_0" domainPrettyName="freertos10_xilinx_ps7_cortexa9_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </lastBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.840486573">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="DNCCTP_subsys" domainName="freertos10_xilinx_ps7_cortexa9_0" domainPrettyName="freertos10_xilinx_ps7_cortexa9_0" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

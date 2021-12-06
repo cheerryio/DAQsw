@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]/home/dn/Project/Vivado/duna_VLFReceiver_Wu_V2/Vitis/platform_new/export/platform_new/sw/platform_new/boot/fsbl.elf
+	/home/dn/Project/Vivado/duna_VLFReceiver_Wu_V2/Vitis/VLFReceiver_Wu/_ide/bitstream/bd_wrapper.bit
+	/home/dn/Project/Vivado/duna_VLFReceiver_Wu_V2/Vitis/VLFReceiver_Wu/Release/VLFReceiver_Wu.elf
+}

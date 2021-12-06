@@ -1,0 +1,255 @@
+/*
+ * FileRW.c
+ *
+ *  Created on: Feb 10, 2017
+ *      Author: loywong
+ */
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <stdbool.h>
+
+/* XDCtools Header files */
+#include <xdc/std.h>
+#include <xdc/runtime/System.h>
+
+/* BIOS Header files */
+#include <ti/sysbios/BIOS.h>
+#include <ti/sysbios/knl/Clock.h>
+#include <ti/sysbios/knl/Task.h>
+#include <ti/sysbios/knl/Semaphore.h>
+
+/* TI-RTOS Header files */
+#include <ti/drivers/GPIO.h>
+#include <ti/drivers/SDSPI.h>
+
+#include "Board.h"
+#include "Params.h"
+#include "DataAcq.h"
+#include <ti/mw/fatfs/ff.h>
+#include "FileRW.h"
+//#define FILE_BUFF_SIZE       DECI_BUF_LEN
+
+/* String conversion macro */
+//#define STR_(n)             #n
+//#define STR(n)              STR_(n)
+
+#define DRIVE_NUM           0
+
+//const char  inputfile[] = "fat:"STR(DRIVE_NUM)":input.txt";
+//const char outputfile[] = "fat:"STR(DRIVE_NUM)":output.txt";
+//
+//const char textarray[] = \
+//"***********************************************************************\n"
+//"0         1         2         3         4         5         6         7\n"
+//"01234567890123456789012345678901234567890123456789012345678901234567890\n"
+//"This is some text to be inserted into the inputfile if there isn't\n"
+//"already an existing file located on the media.\n"
+//"If an inputfile already exists, or if the file was already once\n"
+//"generated, then the inputfile will NOT be modified.\n"
+//"***********************************************************************\n";
+
+char dirName[64];
+
+BinData binFileBuf[NCH][DECI_BUF_LEN];
+
+FIL file[NCH];
+DIR dir;
+FILINFO fno;
+
+MonoWavHeader wavHeader;
+
+inline int getSuffixNum(char *str, int startIdx)
+{
+	char *end;
+	return strtol(str + startIdx, &end, 10);
+}
+
+inline void createDir(char *path)
+{
+    FRESULT res;
+	res = f_mkdir(path);
+	if(res != FR_OK)
+	{
+		GPIO_write(Board_LED_RED, Board_LED_ON);
+		System_abort("Error create dir.\n");
+	}
+}
+
+ void createFile(FIL *file, char *path)
+{
+    FRESULT res;
+	res = f_open (file, path, FA_OPEN_ALWAYS | FA_WRITE);
+	if(res != FR_OK)
+	{
+		GPIO_write(Board_LED_RED, Board_LED_ON);
+		System_abort("Error create dir.\n");
+	}
+}
+
+ void writeFile(FIL *file, void *buf, unsigned int len)
+{
+    FRESULT res;
+    unsigned int bytesWrote;
+	res = f_write(file, buf, len, &bytesWrote);
+	if(res != FR_OK)
+	{
+		GPIO_write(Board_LED_RED, Board_LED_ON);
+		System_abort("write file error!");
+	}
+	if(bytesWrote < len)
+	{
+		GPIO_write(Board_LED_RED, Board_LED_ON);
+		System_abort("Disk full!");
+	}
+
+}
+
+//unsigned char cpy_buff[CPY_BUFF_SIZE + 1];
+
+Semaphore_Handle semDeciReady;
+
+void tskFileRWFunction()
+{
+	int min = 0;
+	int fmin = 0;
+	int hr = 0;
+	int day = 0;
+	int pkgs = 0;
+//	int n;
+	int i, ch;
+	unsigned int bytesToWr = 0;
+//    unsigned int bytesWrote = 0;
+    int intData;
+    unsigned chunkSize = 0;
+    unsigned dataSize = 0;
+//    int bc;
+
+    SDSPI_Handle sdspiHandle;
+    SDSPI_Params sdspiParams;
+
+    Task_sleep(2000);
+
+    /* Mount and register the SD Card */
+    SDSPI_Params_init(&sdspiParams);
+    sdspiParams.bitRate = 20000000;
+    sdspiHandle = SDSPI_open(Board_SDSPI, DRIVE_NUM, &sdspiParams);
+    (*(unsigned int *)0x4000A000) &= 0xFFFF00FF;
+    (*(unsigned int *)0x4000A000) |= 0x00000100;
+
+    if (sdspiHandle == NULL)
+    {
+    		GPIO_write(Board_LED_RED, Board_LED_ON);
+        System_abort("Error starting the SD card\n");
+    }
+    else
+    {
+        System_printf("Drive %u is mounted\n", DRIVE_NUM);
+    }
+
+    // find dir
+    FRESULT res;
+    int times = 0;
+    int num;
+    res = f_opendir(&dir, "/");                       /* Open the directory */
+	if (res == FR_OK)
+	{
+		while(true)
+		{
+			res = f_readdir(&dir, &fno);                   /* Read a directory item */
+			if(res != FR_OK || fno.fname[0] == 0)
+				break;  /* Break on error or end of dir */
+			if(fno.fattrib & AM_DIR)
+			{                    /* It is a directory */
+				num = getSuffixNum(fno.fname, 3);
+				if(times < num)
+					times = num;
+            }
+        }
+        f_closedir(&dir);
+	}
+	else
+	{
+		GPIO_write(Board_LED_RED, Board_LED_ON);
+		System_abort("Read directories error.\n");
+	}
+	times++;
+
+//	wavHeader.Subchunk2Size = FILE_BYTES_PER_SMP * NCH * SRATE_DECI * 60 * MINUTES_PER_FILE;
+//	wavHeader.ChunkSize = 36 + wavHeader.Subchunk2Size;
+//	wavHeader.BitsPerSample = 8 * FILE_BYTES_PER_SMP;
+//	wavHeader.BlockAlign = NCH * FILE_BYTES_PER_SMP;
+//	wavHeader.ByteRate = FILE_BYTES_PER_SMP * NCH * SRATE_DECI;
+//	wavHeader.SampleRate = SRATE_DECI;
+//	wavHeader.NumChannels = NCH;
+
+	sprintf(dirName, "/Daq%05d", times);
+	createDir(dirName);
+	for(day = 0; ; day++)
+	{
+		sprintf(dirName, "/Daq%05d/Day%05d", times, day);
+		createDir(dirName);
+		for(hr = 0; hr < 24; hr++)
+		{
+			sprintf(dirName, "/Daq%05d/Day%05d/Hr%02d", times, day, hr);
+			createDir(dirName);
+			for(fmin = 0; fmin < 60; fmin += MINUTES_PER_FILE)
+			{
+				dataSize = 0;
+				for(ch = 0; ch < NCH; ch++)
+				{
+					sprintf(dirName, "/Daq%05d/Day%05d/Hr%02d/M%02d_C%02d.wav", times, day, hr, fmin, ch);
+					createFile(&file[ch], dirName);
+					writeFile(&file[ch], (void *)&(wavHeader), sizeof(MonoWavHeader));
+				}
+				for(min = 0; min < MINUTES_PER_FILE; min++)
+				{
+					for(pkgs = 0; pkgs < 60 * SRATE_DECI / DECI_BUF_LEN; pkgs++)
+					{
+						bytesToWr = 0;
+						Semaphore_pend(semDeciReady, 1000);
+						bytesToWr += DECI_BUF_LEN * sizeof(BinData);
+						dataSize += bytesToWr;
+						for(i = 0; i < DECI_BUF_LEN; i++)
+						{
+							for(ch = 0; ch < NCH; ch++)
+							{
+								intData = (int)((float)FILE_DATA_LIM * DeciBuffer[ch * DECI_BUF_LEN + i] / VIN_VREF);
+								intData = intData > FILE_DATA_MAX ? FILE_DATA_MAX :
+										  intData < -FILE_DATA_MAX ? -FILE_DATA_MAX : intData;
+								memcpy(&binFileBuf[ch][i], &intData, 3);
+							}
+						}
+						GPIO_write(Board_LED_RED, Board_LED_ON);
+						for(ch = 0; ch < NCH; ch++)
+						{
+							writeFile(&file[ch], (void *)&(binFileBuf[ch][0]), bytesToWr);
+							chunkSize = dataSize + 36;
+////							f_lseek(&file[ch], (int)&(((MonoWavHeader *)0)->ChunkSize));
+////							writeFile(&file[ch], &chunkSize, 4);
+////							f_lseek(&file[ch], (int)&(((MonoWavHeader *)0)->Subchunk2Size));
+////							writeFile(&file[ch], &dataSize, 4);
+//							f_lseek(&file[ch], f_size(&file[ch]));
+						}
+						GPIO_write(Board_LED_RED, Board_LED_OFF);
+					} // pkg
+					GPIO_write(Board_LED_RED, Board_LED_ON);
+					for(ch = 0; ch < NCH; ch++)
+					{
+						f_lseek(&file[ch], (int)&(((MonoWavHeader *)0)->ChunkSize));
+						writeFile(&file[ch], &chunkSize, 4);
+						f_lseek(&file[ch], (int)&(((MonoWavHeader *)0)->Subchunk2Size));
+						writeFile(&file[ch], &dataSize, 4);
+						f_lseek(&file[ch], f_size(&file[ch]));
+						f_sync(&file[ch]);
+					}
+					GPIO_write(Board_LED_RED, Board_LED_OFF);
+				} // min
+				for(ch = 0; ch < NCH; ch++)
+					f_close(&file[ch]);
+			} // f
+		} // hr
+	} // day
+
+}
+

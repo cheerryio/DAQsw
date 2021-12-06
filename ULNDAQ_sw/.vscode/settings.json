@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.do": "shellscript",
+        "sd.h": "c",
+        "tsksd.h": "c",
+        "tskhif.h": "c",
+        "xil_types.h": "c",
+        "pcf8563.h": "c"
+    }
+}

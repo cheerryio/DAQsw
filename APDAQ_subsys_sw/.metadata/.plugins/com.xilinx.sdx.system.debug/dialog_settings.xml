@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="APDAQ_subsys_system-imgFile" value="/home/dn/APDAQ_subsys_sw/APDAQ_subsys_system/_ide/bootimage/BOOT.bin"/>
+	<item key="APDAQ_subsys_system-offSet" value=""/>
+	<item key="APDAQ_subsys_system-initFile" value="/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/boot/fsbl.elf"/>
+	<item key="APDAQ_subsys_system-flashType" value="qspi-x4-single"/>
+	<item key="APDAQ_subsys_system-verifyFlash" value="false"/>
+	<item key="APDAQ_subsys_system-blankCheck" value="false"/>
+	<item key="APDAQ_subsys_system-device" value="Auto Detect"/>
+	<item key="APDAQ_subsys_system-target" value="Local"/>
+	<item key="programflash.hwplatform" value="APDAQ_subsys_system"/>
+</section>

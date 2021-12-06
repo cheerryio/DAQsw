@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:heap-size=33554432
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.DNCCTP_subsys\:stack-size=33554432
+eclipse.preferences.version=1

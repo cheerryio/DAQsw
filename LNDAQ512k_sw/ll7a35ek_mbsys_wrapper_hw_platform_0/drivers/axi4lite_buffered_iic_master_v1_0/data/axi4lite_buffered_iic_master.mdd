@@ -1,0 +1,10 @@
+
+
+OPTION psf_version = 2.1;
+
+BEGIN DRIVER axi4lite_buffered_iic_master
+	OPTION supported_peripherals = (axi4lite_buffered_iic_master);
+	OPTION copyfiles = all;
+	OPTION VERSION = 1.0;
+	OPTION NAME = axi4lite_buffered_iic_master;
+END DRIVER

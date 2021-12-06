@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.do": "shellscript",
+        "xil_printf.h": "c",
+        "xdmaps.h": "c",
+        "xparameters.h": "c",
+        "string": "cpp"
+    }
+}

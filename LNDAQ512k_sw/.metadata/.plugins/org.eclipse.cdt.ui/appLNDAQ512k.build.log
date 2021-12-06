@@ -1,0 +1,43 @@
+22:42:16 **** Auto Build of configuration Debug for project appLNDAQ512k ****
+make all 
+Building file: ../src/xilffs/diskio.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xilffs/diskio.o" -I../../appLNDAQ512k_bsp/microblaze_0/include -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mcpu=v11.0 -mno-xl-soft-mul -mhard-float -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xilffs/diskio.d" -MT"src/xilffs/diskio.o" -o "src/xilffs/diskio.o" "../src/xilffs/diskio.c"
+In file included from ../src/xilffs/../TskHif/PCF8563.h:12:0,
+                 from ../src/xilffs/../TskHif/TskHif.h:12,
+                 from ../src/xilffs/diskio.c:88:
+../src/xilffs/../TskHif/../IicMaster/IicMaster.h:16:1: error: unknown type name 'class'
+ class IicMaster {
+ ^~~~~
+../src/xilffs/../TskHif/../IicMaster/IicMaster.h:16:17: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ class IicMaster {
+                 ^
+In file included from ../src/xilffs/../TskHif/TskHif.h:12:0,
+                 from ../src/xilffs/diskio.c:88:
+../src/xilffs/../TskHif/PCF8563.h:28:1: error: unknown type name 'class'
+ class PCF8563
+ ^~~~~
+../src/xilffs/../TskHif/PCF8563.h:29:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+ {
+ ^
+In file included from ../src/xilffs/diskio.c:88:0:
+../src/xilffs/../TskHif/TskHif.h:15:8: error: unknown type name 'DateTime32'
+ extern DateTime32 DateTime;
+        ^~~~~~~~~~
+../src/xilffs/diskio.c: In function 'get_fattime':
+../src/xilffs/diskio.c:671:37: error: request for member 'Value' in something not a structure or union
+  u32 fat_dt_u32 = ((DWORD)((DateTime.Value >> 1)+(20 << 25)));
+src/xilffs/subdir.mk:27: recipe for target 'src/xilffs/diskio.o' failed
+                                     ^
+../src/xilffs/diskio.c: In function 'disk_write':
+../src/xilffs/diskio.c:715:6: warning: unused variable 'Status' [-Wunused-variable]
+  s32 Status;
+      ^~~~~~
+At top level:
+../src/xilffs/diskio.c:138:11: warning: 'ExtCsd' defined but not used [-Wunused-variable]
+ static u8 ExtCsd[512] __attribute__ ((aligned(32)));
+           ^~~~~~
+make: *** [src/xilffs/diskio.o] Error 1
+
+22:42:17 Build Finished (took 615ms)
+

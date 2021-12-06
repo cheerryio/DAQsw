@@ -1,0 +1,91 @@
+src/xilffs/diskio.o src/xilffs/diskio.o: ../src/xilffs/diskio.c \
+ ../src/xilffs/diskio.h ../src/xilffs/integer.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xil_types.h \
+ ../src/xilffs/ff.h ../src/xilffs/ffconf.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xparameters.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/FreeRTOS.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/FreeRTOSConfig.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xparameters.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/projdefs.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/portable.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/deprecated_definitions.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/portmacro.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/mb_interface.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xil_types.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xil_assert.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xil_exception.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/mpu_wrappers.h \
+ ../src/xilffs/../sdc_ctrl/mmc.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/sleep.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xil_io.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xil_printf.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/bspconfig.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/mb_interface.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xil_printf.h \
+ ../src/xilffs/../TskHif/TskHif.h ../src/xilffs/../TskHif/PCF8563.h \
+ ../src/xilffs/../TskHif/../IicMaster/IicMaster.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xintc.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xstatus.h \
+ ../../daq24b512kca_bsp/microblaze_0/include/xintc_l.h
+
+../src/xilffs/diskio.h:
+
+../src/xilffs/integer.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xil_types.h:
+
+../src/xilffs/ff.h:
+
+../src/xilffs/ffconf.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xparameters.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/FreeRTOS.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/FreeRTOSConfig.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xparameters.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/projdefs.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/portable.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/deprecated_definitions.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/portmacro.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/mb_interface.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xil_types.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xil_assert.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xil_exception.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/mpu_wrappers.h:
+
+../src/xilffs/../sdc_ctrl/mmc.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/sleep.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xil_io.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xil_printf.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/bspconfig.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/mb_interface.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xil_printf.h:
+
+../src/xilffs/../TskHif/TskHif.h:
+
+../src/xilffs/../TskHif/PCF8563.h:
+
+../src/xilffs/../TskHif/../IicMaster/IicMaster.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xintc.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xstatus.h:
+
+../../daq24b512kca_bsp/microblaze_0/include/xintc_l.h:

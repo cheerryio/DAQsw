@@ -1,0 +1,113 @@
+
+ PARAMETER VERSION = 2.2.0
+
+
+BEGIN OS
+ PARAMETER OS_NAME = freertos10_xilinx
+ PARAMETER OS_VER = 1.2
+ PARAMETER PROC_INSTANCE = microblaze_0
+ PARAMETER SYSINTC_SPEC = *
+ PARAMETER SYSTMR_DEV = *
+ PARAMETER SYSTMR_SPEC = true
+ PARAMETER stdin = axi_uartlite_0
+ PARAMETER stdout = axi_uartlite_0
+ PARAMETER tick_rate = 1000
+ PARAMETER total_heap_size = 1048576
+ PARAMETER use_newlib_reent = true
+ PARAMETER use_task_fpu_support = 2
+END
+
+
+BEGIN PROCESSOR
+ PARAMETER DRIVER_NAME = cpu
+ PARAMETER DRIVER_VER = 2.8
+ PARAMETER HW_INSTANCE = microblaze_0
+ PARAMETER compiler_flags =  -mlittle-endian -mxl-barrel-shift -mxl-pattern-compare -mno-xl-soft-mul -mhard-float -mcpu=v11.0
+END
+
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = uartlite
+ PARAMETER DRIVER_VER = 3.2
+ PARAMETER HW_INSTANCE = axi_uartlite_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = bram
+ PARAMETER DRIVER_VER = 4.2
+ PARAMETER HW_INSTANCE = memories_microblaze_0_local_memory_dlmb_bram_if_cntlr
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = bram
+ PARAMETER DRIVER_VER = 4.2
+ PARAMETER HW_INSTANCE = memories_microblaze_0_local_memory_ilmb_bram_if_cntlr
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = mig_7series
+ PARAMETER DRIVER_VER = 2.1
+ PARAMETER HW_INSTANCE = memories_mig_7series_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = peripherals_MiniDmaFifo2Mem_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = axi4lite_buffered_iic_master
+ PARAMETER DRIVER_VER = 1.0
+ PARAMETER HW_INSTANCE = peripherals_axi4lite_buffered_ii_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = gpio
+ PARAMETER DRIVER_VER = 4.3
+ PARAMETER HW_INSTANCE = peripherals_axi_gpio_keys
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = gpio
+ PARAMETER DRIVER_VER = 4.3
+ PARAMETER HW_INSTANCE = peripherals_axi_gpio_leds
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = spi
+ PARAMETER DRIVER_VER = 4.4
+ PARAMETER HW_INSTANCE = peripherals_axi_quad_spi_flash
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = tmrctr
+ PARAMETER DRIVER_VER = 4.5
+ PARAMETER HW_INSTANCE = peripherals_axi_timer_0
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = uartlite
+ PARAMETER DRIVER_VER = 3.2
+ PARAMETER HW_INSTANCE = peripherals_mdm_1
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = intc
+ PARAMETER DRIVER_VER = 3.8
+ PARAMETER HW_INSTANCE = peripherals_microblaze_0_axi_intc
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = generic
+ PARAMETER DRIVER_VER = 2.0
+ PARAMETER HW_INSTANCE = peripherals_wb_sdc_ctrl
+END
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = sysmon
+ PARAMETER DRIVER_VER = 7.5
+ PARAMETER HW_INSTANCE = peripherals_xadc_wiz_0
+END
+
+

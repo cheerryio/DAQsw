@@ -1,0 +1,13 @@
+===================================
+Configuration Memory information
+===================================
+File Format        MCS
+Interface          SPIX1
+Size               16M
+Start Address      0x00000000
+End Address        0x00FFFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x0017E2A3    Aug  5 00:23:25 2021    ../../ll7a35ek_mbsys_wrapper_hw_platform_0/download.bit
+0x0027FF00    0x0027FF27    Aug  5 00:20:09 2021    ./vectors_section.bin
+0x00280000    0x002B843B    Aug  5 00:20:09 2021    ./rest_section.bin

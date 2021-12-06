@@ -1,0 +1,16 @@
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.bss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.data=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.data1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.fixup=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.rodata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.rodata1=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.sbss=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.sbss2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.sdata=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.sdata2=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:.text=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:heap=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:heap-size=134217728
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:stack=ps7_ddr_0
+com.xilinx.sdk.linkgen.prefs.SDPDAQ_subsys\:stack-size=134217728
+eclipse.preferences.version=1

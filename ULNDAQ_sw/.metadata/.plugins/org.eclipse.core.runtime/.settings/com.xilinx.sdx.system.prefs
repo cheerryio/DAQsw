@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+pref_export_page_archive_dir=/home/dn
+pref_export_page_archive_name=ULNDAQ_sw_vitis_export_archive.ide.zip
+pref_export_page_include_build_dir=true
+pref_export_page_project_selection_uniq_key=basic_system, basic_wrapper

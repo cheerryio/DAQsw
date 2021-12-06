@@ -1,0 +1,40 @@
+#ifndef __COMMON_H__
+#define __COMMON_H__
+
+#include "xparameters.h"
+#include "XilPeriph/XilGpio.h"
+#include "XilPeriph/Axi4lFifoIF.h"
+#include "XilPeriph/XilPsDma.h"
+#include "XilPeriph/Eth.h"
+#include <FreeRTOS.h>
+#include <semphr.h>
+#include <queue.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string>
+
+/**
+ * @file  def.hpp
+ * @brief 项目全局宏定义配置
+ * @details 配置网络信息，buffer大小数量信息，dma传输数量信息
+ * @author Duna
+ * @version 1.0.0
+ */
+
+#define CLIENT_IP_ADDR "192.168.1.11"       ///< 配置FPGA开发板ip地址
+#define CLIENT_NETMASK "255.255.255.0"      ///< 配置FPGA开发板掩码
+#define CLIENT_GW      "192.168.1.1"        ///< 配置FPGA开发板网关
+
+#define SERVER_IP_ADDR "192.168.1.42"       ///< 配置上位机ip地址
+#define SERVER_PORT    5016                    ///< 配置上位机端口
+
+#define DMA_TRANS_SIZE 50000                ///< dma一次搬运数据数量
+
+#define DATA_BUF_SIZE 2000000                 ///< netbuf大小，代表一次lwip_send发送数据数量
+#define DATA_BUF_NUM 5                        ///< netbuf多级缓冲数量
+
+#define DEBUG 1
+
+void initPeriph();
+
+#endif

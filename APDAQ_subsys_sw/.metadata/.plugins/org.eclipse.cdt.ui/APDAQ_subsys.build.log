@@ -1,0 +1,242 @@
+18:46:09 **** Incremental Build of configuration Debug for project APDAQ_subsys ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+ 
+make --no-print-directory main-build
+Building file: ../src/oled12864/lq12864.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/oled12864/lq12864.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/oled12864/lq12864.d" -MT"src/oled12864/lq12864.o" -o "src/oled12864/lq12864.o" "../src/oled12864/lq12864.cc"
+../src/oled12864/lq12864.cc: In member function 'void LQ12864::writePage(u8, volatile u8*)':
+../src/oled12864/lq12864.cc:72:22: warning: narrowing conversion of '(int)(176 | ((unsigned char)((int)(((unsigned char)((int)page)) & 7))))' from 'int' to 'u8' {aka 'unsigned char'} [-Wnarrowing]
+   72 |  u8 cmds[3] = {(0xb0 | (page & 0x7)), 0x01, 0x10};
+      |                ~~~~~~^~~~~~~~~~~~~~~
+Finished building: ../src/oled12864/lq12864.cc
+ 
+Building file: ../src/oled12864/oled_fonts.c
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/oled12864/oled_fonts.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/oled12864/oled_fonts.d" -MT"src/oled12864/oled_fonts.o" -o "src/oled12864/oled_fonts.o" "../src/oled12864/oled_fonts.c"
+Finished building: ../src/oled12864/oled_fonts.c
+ 
+Building file: ../src/XilPeriph/XilAxiDma.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/XilPeriph/XilAxiDma.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/XilPeriph/XilAxiDma.d" -MT"src/XilPeriph/XilAxiDma.o" -o "src/XilPeriph/XilAxiDma.o" "../src/XilPeriph/XilAxiDma.cc"
+../src/XilPeriph/XilAxiDma.cc: In constructor 'XilAxiDma::XilAxiDma(u8, u8, u8, XilIntc*, void* (*)(void*), void* (*)(void*))':
+../src/XilPeriph/XilAxiDma.cc:13:6: warning: unused variable 'Status' [-Wunused-variable]
+   13 |  int Status;
+      |      ^~~~~~
+../src/XilPeriph/XilAxiDma.cc: In member function 'int XilAxiDma::XilAxiDmaRegisterInterrupt(void* (*)(void*), void* (*)(void*))':
+../src/XilPeriph/XilAxiDma.cc:42:6: warning: variable 'status' set but not used [-Wunused-but-set-variable]
+   42 |  int status;
+      |      ^~~~~~
+../src/XilPeriph/XilAxiDma.cc:53:1: warning: no return statement in function returning non-void [-Wreturn-type]
+   53 | }
+      | ^
+Finished building: ../src/XilPeriph/XilAxiDma.cc
+ 
+Building file: ../src/XilPeriph/XilGpio.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/XilPeriph/XilGpio.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/XilPeriph/XilGpio.d" -MT"src/XilPeriph/XilGpio.o" -o "src/XilPeriph/XilGpio.o" "../src/XilPeriph/XilGpio.cc"
+../src/XilPeriph/XilGpio.cc: In constructor 'XilGpio::XilGpio(u16)':
+../src/XilPeriph/XilGpio.cc:7:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+    7 |  u32 Status = 0;
+      |      ^~~~~~
+Finished building: ../src/XilPeriph/XilGpio.cc
+ 
+Building file: ../src/XilPeriph/XilIntc.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/XilPeriph/XilIntc.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/XilPeriph/XilIntc.d" -MT"src/XilPeriph/XilIntc.o" -o "src/XilPeriph/XilIntc.o" "../src/XilPeriph/XilIntc.cc"
+Finished building: ../src/XilPeriph/XilIntc.cc
+ 
+Building file: ../src/TskSD/TskSD.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/TskSD/TskSD.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/TskSD/TskSD.d" -MT"src/TskSD/TskSD.o" -o "src/TskSD/TskSD.o" "../src/TskSD/TskSD.cc"
+../src/TskSD/TskSD.cc: In function 'void tskSD(void*)':
+../src/TskSD/TskSD.cc:61:10: warning: unused variable 'ret' [-Wunused-variable]
+   61 |  int sts,ret;
+      |          ^~~
+Finished building: ../src/TskSD/TskSD.cc
+ 
+Building file: ../src/TskHif/MenuDefines.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/TskHif/MenuDefines.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/TskHif/MenuDefines.d" -MT"src/TskHif/MenuDefines.o" -o "src/TskHif/MenuDefines.o" "../src/TskHif/MenuDefines.cc"
+In file included from ../src/TskHif/MenuDefines.cc:15:
+../src/TskHif/../EzMenu.h: In instantiation of 'EzMenuItem<CT, SL>::EzMenuItem(const char*) [with CT = unsigned char; unsigned int SL = 20]':
+../src/TskHif/MenuDefines.cc:30:56:   required from here
+../src/TskHif/../EzMenu.h:60:17: warning: unsigned conversion from 'int' to 'unsigned char' changes value from '16777215' to '255' [-Woverflow]
+   60 |     CT BColor = 0xffffff;
+      |                 ^~~~~~~~
+../src/TskHif/../EzMenu.h:61:20: warning: unsigned conversion from 'int' to 'unsigned char' changes value from '4210752' to '64' [-Woverflow]
+   61 |     CT DisFColor = 0x404040;
+      |                    ^~~~~~~~
+../src/TskHif/../EzMenu.h:62:20: warning: unsigned conversion from 'int' to 'unsigned char' changes value from '12632256' to '192' [-Woverflow]
+   62 |     CT DisBColor = 0xc0c0c0;
+      |                    ^~~~~~~~
+../src/TskHif/../EzMenu.h:63:20: warning: unsigned conversion from 'int' to 'unsigned char' changes value from '16777215' to '255' [-Woverflow]
+   63 |     CT FocFColor = 0xffffff;
+      |                    ^~~~~~~~
+../src/TskHif/../EzMenu.h:69:20: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   69 |     char *Prefix = "\0";
+      |                    ^~~~
+../src/TskHif/../EzMenu.h:70:21: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
+   70 |     char *Postfix = "\0";
+      |                     ^~~~
+../src/TskHif/../EzMenu.h: In instantiation of 'EzMenu<CT, SL>::EzMenu(char*, EzMenuItem<CT, SL>**, int) [with CT = unsigned char; unsigned int SL = 20]':
+../src/TskHif/MenuDefines.cc:47:74:   required from here
+../src/TskHif/../EzMenu.h:444:25: warning: unsigned conversion from 'int' to 'unsigned char' changes value from '16777215' to '255' [-Woverflow]
+  444 |     CT FocusFillColor = 0xffffff;
+      |                         ^~~~~~~~
+../src/TskHif/../EzMenu.h:446:25: warning: unsigned conversion from 'int' to 'unsigned char' changes value from '12632256' to '192' [-Woverflow]
+  446 |     CT UnfocFillColor = 0xc0c0c0;
+      |                         ^~~~~~~~
+../src/TskHif/../EzMenu.h:447:25: warning: unsigned conversion from 'int' to 'unsigned char' changes value from '4210752' to '64' [-Woverflow]
+  447 |     CT UnfocLineColor = 0x404040;
+      |                         ^~~~~~~~
+Finished building: ../src/TskHif/MenuDefines.cc
+ 
+Building file: ../src/TskHif/PCF8563.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/TskHif/PCF8563.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/TskHif/PCF8563.d" -MT"src/TskHif/PCF8563.o" -o "src/TskHif/PCF8563.o" "../src/TskHif/PCF8563.cc"
+Finished building: ../src/TskHif/PCF8563.cc
+ 
+Building file: ../src/TskHif/TskHif.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/TskHif/TskHif.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/TskHif/TskHif.d" -MT"src/TskHif/TskHif.o" -o "src/TskHif/TskHif.o" "../src/TskHif/TskHif.cc"
+../src/TskHif/TskHif.cc: In function 'void keyAction(void*, bool, bool, unsigned int)':
+../src/TskHif/TskHif.cc:93:38: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+   93 |                     sprintf(str, "%02u", DateTime.YearFrom2000);
+      |                                   ~~~^   ~~~~~~~~~~~~~~~~~~~~~
+      |                                      |            |
+      |                                      unsigned int long unsigned int
+      |                                   %02lu
+../src/TskHif/TskHif.cc:95:38: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+   95 |                     sprintf(str, "%02u", DateTime.Month);
+      |                                   ~~~^   ~~~~~~~~~~~~~~
+      |                                      |            |
+      |                                      unsigned int long unsigned int
+      |                                   %02lu
+../src/TskHif/TskHif.cc:97:38: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+   97 |                     sprintf(str, "%02u", DateTime.Day);
+      |                                   ~~~^   ~~~~~~~~~~~~
+      |                                      |            |
+      |                                      unsigned int long unsigned int
+      |                                   %02lu
+../src/TskHif/TskHif.cc:99:38: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+   99 |                     sprintf(str, "%02u", DateTime.Hour);
+      |                                   ~~~^   ~~~~~~~~~~~~~
+      |                                      |            |
+      |                                      unsigned int long unsigned int
+      |                                   %02lu
+../src/TskHif/TskHif.cc:101:38: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+  101 |                     sprintf(str, "%02u", DateTime.Minute);
+      |                                   ~~~^   ~~~~~~~~~~~~~~~
+      |                                      |            |
+      |                                      unsigned int long unsigned int
+      |                                   %02lu
+../src/TskHif/TskHif.cc:103:38: warning: format '%u' expects argument of type 'unsigned int', but argument 3 has type 'long unsigned int' [-Wformat=]
+  103 |                     sprintf(str, "%02u", DateTime.Second);
+      |                                   ~~~^   ~~~~~~~~~~~~~~~
+      |                                      |            |
+      |                                      unsigned int long unsigned int
+      |                                   %02lu
+../src/TskHif/TskHif.cc: In function 'void tskHif(void*)':
+../src/TskHif/TskHif.cc:177:38: warning: format '%u' expects argument of type 'unsigned int', but argument 4 has type 'long unsigned int' [-Wformat=]
+  177 |                 sprintf(str, "%4u-%02u-%02u %02u:%02u:%02u", DateTime.YearFrom2000 + 2000, DateTime.Month,
+      |                                   ~~~^                                                     ~~~~~~~~~~~~~~
+      |                                      |                                                              |
+      |                                      unsigned int                                                   long unsigned int
+      |                                   %02lu
+../src/TskHif/TskHif.cc:177:43: warning: format '%u' expects argument of type 'unsigned int', but argument 5 has type 'long unsigned int' [-Wformat=]
+  177 |                 sprintf(str, "%4u-%02u-%02u %02u:%02u:%02u", DateTime.YearFrom2000 + 2000, DateTime.Month,
+      |                                        ~~~^
+      |                                           |
+      |                                           unsigned int
+      |                                        %02lu
+  178 |                         DateTime.Day, DateTime.Hour, DateTime.Minute, DateTime.Second);
+      |                         ~~~~~~~~~~~~       
+      |                                  |
+      |                                  long unsigned int
+../src/TskHif/TskHif.cc:177:48: warning: format '%u' expects argument of type 'unsigned int', but argument 6 has type 'long unsigned int' [-Wformat=]
+  177 |                 sprintf(str, "%4u-%02u-%02u %02u:%02u:%02u", DateTime.YearFrom2000 + 2000, DateTime.Month,
+      |                                             ~~~^
+      |                                                |
+      |                                                unsigned int
+      |                                             %02lu
+  178 |                         DateTime.Day, DateTime.Hour, DateTime.Minute, DateTime.Second);
+      |                                       ~~~~~~~~~~~~~
+      |                                                |
+      |                                                long unsigned int
+../src/TskHif/TskHif.cc:177:53: warning: format '%u' expects argument of type 'unsigned int', but argument 7 has type 'long unsigned int' [-Wformat=]
+  177 |                 sprintf(str, "%4u-%02u-%02u %02u:%02u:%02u", DateTime.YearFrom2000 + 2000, DateTime.Month,
+      |                                                  ~~~^
+      |                                                     |
+      |                                                     unsigned int
+      |                                                  %02lu
+  178 |                         DateTime.Day, DateTime.Hour, DateTime.Minute, DateTime.Second);
+      |                                                      ~~~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               long unsigned int
+../src/TskHif/TskHif.cc:177:58: warning: format '%u' expects argument of type 'unsigned int', but argument 8 has type 'long unsigned int' [-Wformat=]
+  177 |                 sprintf(str, "%4u-%02u-%02u %02u:%02u:%02u", DateTime.YearFrom2000 + 2000, DateTime.Month,
+      |                                                       ~~~^
+      |                                                          |
+      |                                                          unsigned int
+      |                                                       %02lu
+  178 |                         DateTime.Day, DateTime.Hour, DateTime.Minute, DateTime.Second);
+      |                                                                       ~~~~~~~~~~~~~~~
+      |                                                                                |
+      |                                                                                long unsigned int
+Finished building: ../src/TskHif/TskHif.cc
+ 
+Building file: ../src/TskData/TskData.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/TskData/TskData.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/TskData/TskData.d" -MT"src/TskData/TskData.o" -o "src/TskData/TskData.o" "../src/TskData/TskData.cc"
+../src/TskData/TskData.cc: In function 'void axi_dma_ISR(void*)':
+../src/TskData/TskData.cc:50:10: warning: unused variable 'ret' [-Wunused-variable]
+   50 |      int ret = xSemaphoreGiveFromISR(semDma, &wake);
+      |          ^~~
+../src/TskData/TskData.cc: In function 'void tskData(void*)':
+../src/TskData/TskData.cc:76:16: warning: passing NULL to non-pointer argument 1 of 'void vTaskDelay(TickType_t)' [-Wconversion-null]
+   76 |     vTaskDelay(NULL);
+      |                ^~~~
+In file included from /home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include/queue.h:40,
+                 from /home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include/semphr.h:35,
+                 from ../src/TskData/TskData.h:5,
+                 from ../src/TskData/TskData.cc:1:
+/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include/task.h:758:35: note:   declared here
+  758 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                  ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../src/TskData/TskData.cc:60:13: warning: unused variable 'ret' [-Wunused-variable]
+   60 |     int sts,ret;
+      |             ^~~
+Finished building: ../src/TskData/TskData.cc
+ 
+Building file: ../src/IicMaster/IicMaster.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/IicMaster/IicMaster.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/IicMaster/IicMaster.d" -MT"src/IicMaster/IicMaster.o" -o "src/IicMaster/IicMaster.o" "../src/IicMaster/IicMaster.cc"
+Finished building: ../src/IicMaster/IicMaster.cc
+ 
+Building file: ../src/common.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/common.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/common.d" -MT"src/common.o" -o "src/common.o" "../src/common.cc"
+Finished building: ../src/common.cc
+ 
+Building file: ../src/main.cc
+Invoking: ARM v7 g++ compiler
+arm-none-eabi-g++ -Wall -O3 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+Finished building: ../src/main.cc
+ 
+Building target: APDAQ_subsys.elf
+Invoking: ARM v7 g++ linker
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L/home/dn/APDAQ_subsys_sw/APDAQ_subsys_wrapper/export/APDAQ_subsys_wrapper/sw/APDAQ_subsys_wrapper/freertos10_xilinx_ps7_cortexa9_0/bsplib/lib -o "APDAQ_subsys.elf"  ./src/oled12864/lq12864.o ./src/oled12864/oled_fonts.o  ./src/XilPeriph/XilAxiDma.o ./src/XilPeriph/XilGpio.o ./src/XilPeriph/XilIntc.o  ./src/TskSD/TskSD.o  ./src/TskHif/MenuDefines.o ./src/TskHif/PCF8563.o ./src/TskHif/TskHif.o  ./src/TskData/TskData.o  ./src/IicMaster/IicMaster.o  ./src/common.o ./src/main.o   -Wl,--start-group,-lxil,-lfreertos,-lgcc,-lc,-lstdc++,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group
+Finished building target: APDAQ_subsys.elf
+ 
+Invoking: ARM v7 Print Size
+arm-none-eabi-size APDAQ_subsys.elf  |tee "APDAQ_subsys.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 273592	   5672	169629584	169908848	a209a70	APDAQ_subsys.elf
+Finished building: APDAQ_subsys.elf.size
+ 
+
+18:46:11 Build Finished (took 1s.966ms)
+
